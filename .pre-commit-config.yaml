@@ -10,8 +10,8 @@ repos:
     -   id: check-json
     -   id: check-merge-conflict
     -   id: double-quote-string-fixer
-    # -   id: no-commit-to-branch
-    #     args: ['--branch', 'main']
+    -   id: no-commit-to-branch
+        args: ['--branch', 'main']
 
 -   repo: https://github.com/pre-commit/mirrors-eslint
     rev: ''
