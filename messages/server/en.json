@@ -1,6 +1,5 @@
 {
     "Test": {
-        "test_client": "Testing client",
         "test_server": "Testing server"
     }
 }

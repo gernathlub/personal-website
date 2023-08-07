@@ -18,7 +18,7 @@ export default async function LocaleLayout({children, params}: {children: React.
   let messages;
   const locale = params.locale;
   try {
-    messages = (await import(`../../../messages/${locale}.json`)).default;
+    messages = (await import(`../../../messages/client/${locale}.json`)).default;
   } catch (error) {
     notFound();
   }
