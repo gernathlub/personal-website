@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = "postgresql://postgres:postgres@localhost:5432/personal_web" // uses connection pooling
+  //directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model Article {
+  id        String     @default(cuid()) @id
+  title     String
+  content   String
+  published Boolean @default(false)
+  publishedAt DateTime @updatedAt @map(name: "published_at")
+  views Int @default(0)
+  language Languages @default(EN)
+}
+
+enum Languages {
+  EN
+  SK
+}
+
+// model User {
+//   id            String       @default(cuid()) @id
+//   name          String?
+//   email         String?   @unique
+//   createdAt     DateTime  @default(now()) @map(name: "created_at")
+//   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+//   posts         Post[]
+//   @@map(name: "users")
+// }
