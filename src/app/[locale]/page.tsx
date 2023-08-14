@@ -1,23 +1,39 @@
+import ContentContainer from "@/components/ContentContainer";
+import Delimiter from "@/components/Delimiter";
 
 export default function Home() {
   return (
-    <div>
-      <div className="w-full hidden md:flex flex-row">
-        <div className="w-auto h-auto bg-blue-300 flex-grow">NNam Menu</div>
-        <div className='bg-red-200 w-16 h-16 flex-grow-0'>Github</div>
-        <div className='bg-gray-500 w-16 h-16 flex-grow-0'>Linkedin</div>
+    <div className="w-full">
+      <ContentContainer>
+        <div className="h-60 mt-40">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio
+          quod quidem dicta culpa enim vitae, quasi necessitatibus dolores dolor
+          molestias cumque rem repellendus inventore voluptatum consequuntur.
+          Amet, quam quia.
+        </div>
+      </ContentContainer>
+      <Delimiter type={1}></Delimiter>
+      <ContentContainer>
+        <div className="w-full h-96 bg-grad-svg bg-cover"></div>
+        <div className="w-full h-60">Skillset</div>
+      </ContentContainer>
+      <Delimiter type={2}></Delimiter>
+      <div className="bg-secondary">
+        <ContentContainer>
+          <div className="w-full h-80"></div>
+          <div className="w-full h-60">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+            qui perspiciatis cumque saepe illo odit nobis. Ipsa saepe, similique
+            rem, illum totam aliquid, velit pariatur repellat voluptatibus
+            nesciunt ipsam doloremque.
+          </div>
+        </ContentContainer>
       </div>
-      <div className="flex flex-row">
-        <div className="w-auto h-auto bg-green-300 flex-grow">Breadcrumbs/Home</div>
-        <div className="bg-red-200 w-16 h-16 flex-grow-0 md:hidden">X</div>
-      </div>
-      <div className="w-full h-60 bg-slate-500">Logo section</div>
-      <div className="w-full h-60 bg-blue-400">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia qui perspiciatis cumque saepe illo odit nobis. Ipsa saepe, similique rem, illum totam aliquid, velit pariatur repellat voluptatibus nesciunt ipsam doloremque.
-      </div>
-      <div className="w-full h-60 bg-slate-500">
-        Skillset
-      </div>
+      <Delimiter type={3}></Delimiter>
+
+      <ContentContainer>
+        <div className="w-full h-60 mt-60">Something here as well</div>
+      </ContentContainer>
     </div>
-  )
+  );
 }
