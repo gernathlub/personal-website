@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="w-full relative mb-0 aspect-10/2">
                 <Image src="/delimiters/footer_V1.svg" alt="Footer" fill={true}></Image>
             </div>
-            <div className="w-full h-10 m-0 text-center align-middle bg-primary text-secondary">Made by Lubomir Gernath @ 2023</div>
+            <div className="w-full h-10 m-0 text-center align-middle bg-primary text-secondary">Lubomir Gernath @ 2023</div>
         </div>
     )
 }
