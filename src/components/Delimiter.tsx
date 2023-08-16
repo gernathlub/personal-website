@@ -11,8 +11,8 @@ export default function Delimiter({type}: {type: number}) {
     }
 
     return (
-        <div className="w-full h-fit block relative m-0 p-0 aspect-[10/.6]">
-            <Image src={getImageByType(type)} alt="Delimiter" width={100} height={100} className="h-auto w-full"></Image>
+        <div className="w-auto lg:w-full h-20 lg:h-fit block relative m-0 p-0 aspect-10/2 lg:aspect-100/6">
+            <Image src={getImageByType(type)} alt="Delimiter" width={100} height={100} className="h-full w-auto lg:h-auto lg:w-full max-w-none"></Image>
         </div>
     )
 }
