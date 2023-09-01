@@ -26,6 +26,7 @@ module.exports = {
       },
       textColor: {
         'dark': '#E9EDEB',
+        'bg': "#0e1d23",
         'bright': '#000000',
       },
       aspectRatio: {
