@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import NavMenu from "@/components/NavMenu";
 import Socials from "@/components/Socials";
 import ContentContainer from "@/components/ContentContainer";
+import LocaleSwitch from "@/components/LocaleSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider locale={locale} messages={messages}>
             <ContentContainer>
               <div className="w-full flex flex-row relative mt-2 mb-8 h-10">
+                <LocaleSwitch/>
                 <NavMenu />
                 <Socials />
               </div>
