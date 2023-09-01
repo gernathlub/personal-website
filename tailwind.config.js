@@ -31,6 +31,9 @@ module.exports = {
       aspectRatio: {
         '100/6': '10/.6',
         '10/2': '10/2'
+      },
+      margin: {
+        '15': '60px'
       }
 
       //primary: '#00f284' greenish
