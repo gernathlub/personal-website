@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import NavMenu from "@/components/NavMenu";
 import Socials from "@/components/Socials";
-import ContentContainer from "@/wrappers/ContentContainer";
+import ContentContainer from "@/components/ContentContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 
