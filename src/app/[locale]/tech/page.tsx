@@ -1,7 +1,7 @@
-export default function About() {
+export default function Tech() {
     return (
         <div className="flex justify-center flex-grow">
-            About Me Page
+            <div>Technologies</div>
         </div>
     )
 }
