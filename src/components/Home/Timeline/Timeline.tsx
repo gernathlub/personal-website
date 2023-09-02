@@ -13,8 +13,8 @@ export default function Timeline() {
       <h2 className="text-5xl sm:text-6xl font-semibold leading-relaxed pt-80">
         {t("A Brief History of Me")}
       </h2>
-      <div className="w-full py-80 relative flex-row flex">
-        <div className="w-3 rounded-xl bg-dark relative left-1/2 py-20  overflow-x-visible -translate-x-1/2 h-">
+      <div className="w-full pt-60 pb-80  relative flex-row flex">
+        <div className="w-3 rounded-xl bg-dark relative left-1/2 py-40  overflow-x-visible -translate-x-1/2 h-">
           <TimelineItem>
             <div className="mt-2.5">
               <FontAwesomeIcon icon={faCode} className="p-3 my-auto" />
