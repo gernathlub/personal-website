@@ -8,11 +8,11 @@ export default function Timeline() {
 
   return (
     <ContentContainer extraClass="bg-secondary">
-      <h2 className="font-semibold leading-relaxed pt-80 text-5xl sm:text-6xl">
-        {t("A Brief History of Me")}
+      <h2 className="font-semibold leading-normal pt-80 text-5xl whitespace-pre-line sm:text-6xl sm:leading-normal lg:whitespace-normal">
+        {t("A Brief\nHistory of Me")}
       </h2>
       <div className="flex flex-row justify-center py-60 relative w-full">
-        <div className="block flex-grow-0 h-full w-16 md:hidden md:w-auto lg:block lg:flex-grow" />
+        <div className="block flex-grow-0 h-full w-12 sm:w-16 md:hidden md:w-auto lg:block lg:flex-grow" />
         <div className="bg-dark flex-grow-0 h-full rounded-xl w-3">
           <TimelineItem
             icon={faCode}
