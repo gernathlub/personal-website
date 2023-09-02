@@ -7,19 +7,37 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#9dffd3',
+        'secondary': '#124255',
+        'dark':  "#0e1d23"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'grad-svg': "url('/blury_v1.svg')",
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       backgroundColor: {
-        'dark': '#03151D',
+        //'darkv3': '#03151D',
+        'dark': '#0e1d23',
+        //'darkV2': '#124255', bit brighter to blueish
         'bright': '#FFFFFF'
       },
       textColor: {
         'dark': '#E9EDEB',
-        'bright': '#000000'
+        'bg': "#0e1d23",
+        'bright': '#000000',
+      },
+      aspectRatio: {
+        '100/6': '10/.6',
+        '10/2': '10/2'
+      },
+      margin: {
+        '15': '60px'
       }
+
+      //primary: '#00f284' greenish
     },
   },
   plugins: [],

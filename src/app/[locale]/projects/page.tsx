@@ -1,7 +1,7 @@
-export default function About() {
+export default function Projects() {
     return (
         <div className="flex flex-grow justify-center">
-            About Me Page
+            <div>My Projects</div>
         </div>
     )
 }
