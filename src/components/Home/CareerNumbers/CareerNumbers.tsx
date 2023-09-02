@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import NumberItem from "./NumberItem";
 
 export default function CareerNumbers() {
-  const t = useTranslations("Home");
+  const t = useTranslations("CareerNumbers");
 
   return (
     <ContentContainer>

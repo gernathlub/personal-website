@@ -1,12 +1,60 @@
 import { ReactNode } from "react";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function TimelineItem({ children, redirPath }: { children: ReactNode, redirPath?: string }) {
+export default function TimelineItem({
+  redirPath,
+  imgSrc,
+  icon,
+  extraClass,
+  year,
+  title
+}: {
+  redirPath?: string;
+  imgSrc?: string;
+  icon?: IconDefinition;
+  extraClass?: string;
+  year: number;
+  title: string
+}) {
   return (
-    <div className="rounded-full group bg-dark border-dark border-8 border-solid w-10 h-10 z-2 mt-20 ml-1.5 -translate-x-1/2 delay-100 duration-500 transition-all hover:bg-secondary hover:h-40 hover:mt-5 hover:w-40 hover:-mb-15">
-      <div className="absolute w-40 h-1 bg-dark rounded-xl group-odd:left-0 group-even:left-full top-1/2 -translate-y-1/2 group-odd:-translate-x-full group-hover:bg-transparent z-1 group-hover:w-0 group:odd:group-hover:left-0 group-even:group-hover:right-0 duration-300 delay-300 transition-all"/>
-      <a href={redirPath} className="opacity-0 mx-auto my-auto overflow-visible group-hover:opacity-100 transition-all duration-200 relative">
-        {children}
-      </a>
+    <div className="group/outer h-60 relative">
+      <div className="relative w-screen group-odd/outer:left-0 group-even/outer:right-0 top-1/2 flex group-odd/outer:-translate-x-1/2 -translate-y-1/2">
+        <div className="w-1/2 group-odd/outer:text-right group-even/outer:text-left float-left group-odd/outer:pr-60 group-even/outer:pl-60">
+          <div className="w-fit group-odd/outer:float-right group-even/outer:float-left text-left mt-6">
+              <h3 className="font-semibold text-8xl text-primary">{year}</h3>
+              <div className="w-full text-2xl ml-1">{title}</div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute group/inner bg-dark border-dark border-8 border-solid delay-100 duration-500 h-10 ml-1.5 rounded-full top-1/2 transition-all -translate-x-1/2 -translate-y-1/2 w-10 z-2 hover:bg-secondary hover:h-40 hover:w-40">
+        <div className="absolute bg-dark delay-300 duration-300 h-1 rounded-xl top-1/2 transition-all -translate-y-1/2 w-40 z-1 group-hover/inner:bg-transparent group-hover/inner:w-0 group-odd/outer:left-0 group-even/outer:left-full group-odd/outer:-translate-x-full group-odd/outer:group-hover/inner:left-0 group-even/outer:group-hover/inner:right-0" />
+        <a
+          href={redirPath}
+          className="duration-200 overflow-visible opacity-0 relative transition-all group-hover/inner:opacity-100"
+        >
+          {icon ? (
+            <div className="mt-2.5">
+              <FontAwesomeIcon icon={icon} className="p-3 my-auto" />
+            </div>
+          ) : (
+            ""
+          )}
+
+          {!icon && imgSrc ? (
+            <Image
+              src={imgSrc}
+              height={110}
+              width={110}
+              alt="Logo"
+              className={`w-full h-full ${extraClass}`}
+            />
+          ) : (
+            ""
+          )}
+        </a>
+      </div>
     </div>
   );
 }
