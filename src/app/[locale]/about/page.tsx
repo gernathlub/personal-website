@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="flex justify-center flex-grow">
+        <div className="flex flex-grow justify-center">
             About Me Page
         </div>
     )

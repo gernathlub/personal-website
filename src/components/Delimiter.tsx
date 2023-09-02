@@ -18,13 +18,13 @@ export default function Delimiter({ type }: { type?: DelimiterTypeEnum }) {
   }
 
   return (
-    <div className="w-auto lg:w-full h-20 lg:h-fit block relative m-0 p-0 aspect-10/2 lg:aspect-100/6">
+    <div className="aspect-10/2 block h-20 m-0 p-0 relative w-auto lg:aspect-100/6 lg:h-fit lg:w-full">
       <Image
         src={getImageByType(type)}
         alt="Delimiter"
         width={100}
         height={100}
-        className="h-full w-auto lg:h-auto lg:w-full max-w-none"
+        className="h-full max-w-none w-auto lg:h-auto lg:w-full"
       ></Image>
     </div>
   );

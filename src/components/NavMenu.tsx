@@ -5,7 +5,7 @@ import NavLink from "@/components/NavLink";
 export default function NavMenu() {
   const t = useTranslations("Navigation");
   return (
-    <div className="h-full w-fit ml-auto mr-auto relative flex-grow space-x-1">
+    <div className="flex-grow h-full ml-auto mr-auto relative space-x-1 w-fit">
       <NavLink title={t("Home")} route="/" />
       <NavLink title={t("Projects")} route="/projects" />
       <NavLink title={t("Tech")} route="/tech" />

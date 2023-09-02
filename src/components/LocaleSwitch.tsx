@@ -19,10 +19,10 @@ export default function LocaleSwitch() {
   };
 
   return (
-    <div className="absolute left-4 md:left-0 -top-2.5 inline-block w-24 h-12 z-10 bg-secondary rounded-full py-3" onClick={handleToggle}>
-      <label className="w-1/2 h-full cursor-pointer font-semibold align-bottom -ml-0.5 mr-4 text-center rounded-full shadow-md toggle-label hover:text-primary" id="en-label">EN</label>
-      <label className="w-1/2 h-full cursor-pointer font-semibold align-bottom text-center rounded-full shadow-md toggle-label hover:text-primary" id="sk-label">SK</label>
-      <div className={`absolute w-9 left-3 cursor-pointer -z-1 top-1.5 py-1.5 h-9 bg-primary align-bottom font-bold text-bg rounded-full transform transition-transform ${locale === 'sk' ? 'translate-x-full -right-1.5' : 'translate-x-0'}`} id="toggle-slider">{locale.toUpperCase()}</div>
+    <div className="absolute bg-secondary h-12 inline-block left-4 py-3 rounded-full -top-2.5 w-24 z-10 md:left-0" onClick={handleToggle}>
+      <label className="align-bottom cursor-pointer font-semibold h-full -ml-0.5 mr-4 rounded-full shadow-md text-center toggle-label w-1/2 hover:text-primary" id="en-label">EN</label>
+      <label className="align-bottom cursor-pointer font-semibold h-full rounded-full shadow-md text-center toggle-label w-1/2 hover:text-primary" id="sk-label">SK</label>
+      <div className={`absolute align-bottom bg-primary cursor-pointer font-bold h-9 left-3 py-1.5 rounded-full text-bg top-1.5 transform transition-transform w-9 -z-1 ${locale === 'sk' ? '-right-1.5 translate-x-full' : 'translate-x-0'}`} id="toggle-slider">{locale.toUpperCase()}</div>
     </div>
   );
 };
