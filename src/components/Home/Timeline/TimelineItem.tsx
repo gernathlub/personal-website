@@ -20,15 +20,15 @@ export default function TimelineItem({
 }) {
   return (
     <div className="group/outer h-60 relative">
-      <div className="relative w-screen group-odd/outer:left-0 group-even/outer:right-0 top-1/2 flex group-odd/outer:-translate-x-1/2 -translate-y-1/2">
-        <div className="w-1/2 group-odd/outer:text-right group-even/outer:text-left float-left group-odd/outer:pr-60 group-even/outer:pl-60">
-          <div className="w-fit group-odd/outer:float-right group-even/outer:float-left text-left mt-6">
+      <div className="flex relative top-1/2 -translate-y-1/2 w-screen group-even/outer:right-0 group-odd/outer:left-0 group-odd/outer:-translate-x-1/2">
+        <div className="w-1/2 group-odd/outer:text-right  float-left group-odd/outer:pr-60 group-even/outer:pl-60">
+          <div className="mt-6 text-left w-fit group-even/outer:float-left group-odd/outer:float-right">
               <h3 className="font-semibold text-8xl text-primary">{year}</h3>
-              <div className="w-full text-2xl ml-1">{title}</div>
+              <div className="ml-1 text-2xl w-full">{title}</div>
           </div>
         </div>
       </div>
-      <div className="absolute group/inner bg-dark border-dark border-8 border-solid delay-100 duration-500 h-10 ml-1.5 rounded-full top-1/2 transition-all -translate-x-1/2 -translate-y-1/2 w-10 z-2 hover:bg-secondary hover:h-40 hover:w-40">
+      <div className="absolute bg-dark border-dark border-8 border-solid delay-100 duration-500 group/inner h-10 ml-1.5 rounded-full top-1/2 transition-all -translate-x-1/2 -translate-y-1/2 w-10 z-2 hover:bg-secondary hover:h-40 hover:w-40">
         <div className="absolute bg-dark delay-300 duration-300 h-1 rounded-xl top-1/2 transition-all -translate-y-1/2 w-40 z-1 group-hover/inner:bg-transparent group-hover/inner:w-0 group-odd/outer:left-0 group-even/outer:left-full group-odd/outer:-translate-x-full group-odd/outer:group-hover/inner:left-0 group-even/outer:group-hover/inner:right-0" />
         <a
           href={redirPath}
@@ -36,7 +36,7 @@ export default function TimelineItem({
         >
           {icon ? (
             <div className="mt-2.5">
-              <FontAwesomeIcon icon={icon} className="p-3 my-auto" />
+              <FontAwesomeIcon icon={icon} className="my-auto p-3" />
             </div>
           ) : (
             ""
@@ -48,7 +48,7 @@ export default function TimelineItem({
               height={110}
               width={110}
               alt="Logo"
-              className={`w-full h-full ${extraClass}`}
+              className={`h-full w-full ${extraClass}`}
             />
           ) : (
             ""

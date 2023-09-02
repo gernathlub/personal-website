@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <div className="flex justify-center flex-col flex-grow">
+        <div className="flex flex-grow justify-center">
             <div>My Projects</div>
         </div>
     )

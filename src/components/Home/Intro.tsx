@@ -6,16 +6,16 @@ export default function Intro() {
 
   return (
     <ContentContainer>
-      <div className="px-18 md:px-22 xl:px-28 mt-36 mb-52 md:mt-48 flex flex-col space-y-64 md:space-y-80">
-        <h1 className="text-5xl sm:text-6xl font-bold leading-relaxed sm:leading-relaxed whitespace-pre-line">
+      <div className="flex flex-col mb-52 mt-36 px-18 space-y-64 md:mt-48 md:px-22 xl:px-28 md:space-y-80">
+        <h1 className="font-bold leading-relaxed text-5xl whitespace-pre-line sm:text-6xl">
           {t("Looking for a\nFullStack Web Developer?")}
         </h1>
-        <h3 className="text-4xl sm:text-5xl px-10 font-medium leading-normal whitespace-pre-line">
+        <h3 className="font-medium leading-normal px-10 text-4xl whitespace-pre-line sm:text-5xl">
           {t("Let`s See if You Just\nFound One!")}
         </h3>
-        <h2 className="text-4xl sm:text-5xl mt-48 font-medium leading-relaxed">
+        <h2 className="font-medium leading-relaxed mt-48 text-4xl sm:text-5xl">
           {t("My Name is")}
-          <p className="text-primary font-semibold">Ľubomír Gernáth</p>
+          <p className="font-semibold text-primary">Ľubomír Gernáth</p>
         </h2>
       </div>
     </ContentContainer>

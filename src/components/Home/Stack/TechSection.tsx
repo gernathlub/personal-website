@@ -3,10 +3,10 @@ import { ReactNode } from "react"
 export default function TechSection({children, title}: {children: ReactNode, title: string}) {
     return (
         <div className="w-full">
-            <h3 className="text-4xl sm:text-5xl px-10 font-medium leading-normal mb-12">
+            <h3 className="font-medium leading-normal mb-12 px-10 text-4xl sm:text-5xl">
                 {title}
             </h3>
-            <div className="w-full h-auto flex flex-row flex-wrap justify-center items-center">
+            <div className="flex flex-row flex-wrap h-auto items-center justify-center w-full">
                 {children}
             </div>
         </div>

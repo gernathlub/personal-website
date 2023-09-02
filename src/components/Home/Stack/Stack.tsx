@@ -8,10 +8,10 @@ export default function Stack() {
 
   return (
     <ContentContainer extraClass="flex flex-col my-40">
-      <h2 className="text-5xl sm:text-6xl font-semibold leading-relaxed mt-40 mb-80">
+      <h2 className="font-semibold leading-relaxed mb-80 mt-40 text-5xl sm:text-6xl">
         FullStack?
       </h2>
-      <div className="w-full justify-center flex-wrap space-y-60">
+      <div className="flex-wrap justify-center space-y-60 w-full">
         <TechSection title="Frontend">
           <TechItemLogo
             imgPath="/logos/nextjs.svg"
@@ -96,7 +96,7 @@ export default function Stack() {
         </TechSection>
       </div>
 
-      <h2 className="text-5xl sm:text-6xl font-semibold text-primary leading-relaxed mb-40 mt-80">
+      <h2 className="font-semibold leading-relaxed mb-40 mt-80 text-5xl text-primary sm:text-6xl">
         FullStack
       </h2>
     </ContentContainer>

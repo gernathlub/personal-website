@@ -39,11 +39,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <main className="flex min-h-screen min-w-screen flex-col overflow-x-hidden h-fit bg-bright dark:bg-dark text-bright dark:text-dark">
+        <main className="bg-dark text-dark flex flex-col min-h-screen min-w-screen overflow-x-hidden">
           <Header></Header>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <ContentContainer>
-              <div className="w-full flex flex-row relative mt-2 mb-8 h-10">
+              <div className="flex flex-row h-10 mb-8 mt-2 relative w-full">
                 <LocaleSwitch/>
                 <NavMenu />
                 <Socials />
