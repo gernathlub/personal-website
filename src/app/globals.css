@@ -27,3 +27,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #195f71;
 }
+
+.profile-mask {
+  -webkit-mask-image: url(../../public/profile_mask.svg);
+  mask-image: url(../../public/profile_mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
