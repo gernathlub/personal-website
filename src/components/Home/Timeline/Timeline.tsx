@@ -22,7 +22,7 @@ export default function Timeline() {
 
           <TimelineItem
             year={2021}
-            title={t("Bachelor Degree Graduation")}
+            title={t("Bachelor's Degree Graduation")}
             redirPath="https://tuke.sk/"
             imgSrc="/logos/tuke.svg"
             extraClass="p-7 mt-1"
@@ -38,7 +38,7 @@ export default function Timeline() {
 
           <TimelineItem
             year={2023}
-            title={t("Master Degree Graduation")}
+            title={t("Master's Degree Graduation")}
             redirPath="https://tuke.sk/"
             imgSrc="/logos/tuke.svg"
             extraClass="p-7 mt-1"

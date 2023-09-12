@@ -24,7 +24,7 @@ export default function TimelineItem({
         <div className="float-left pl-28 w-1/2 sm:pl-32 md:pl-60 lg:group-odd/outer:text-right lg:group-odd/outer:pl-0 lg:group-odd/outer:pr-60">
           <div className="mt-14 text-left w-fit float-left lg:group-odd/outer:float-right">
               <h3 className="font-semibold text-6xl text-primary sm:text-8xl">{year}</h3>
-              <div className="ml-1 text-xl w-40 sm:text-2xl sm:w-48">{title}</div>
+              <div className="ml-1 text-xl w-40 sm:text-2xl sm:w-52">{title}</div>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function TimelineItem({
         >
           {icon ? (
             <div className="mt-2.5">
-              <FontAwesomeIcon icon={icon} className="my-auto p-3" />
+              <FontAwesomeIcon icon={icon} className="my-auto p-3 w-5/6 h-auto" />
             </div>
           ) : (
             ""

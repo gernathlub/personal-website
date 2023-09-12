@@ -11,7 +11,7 @@ export default function Intro() {
           {t("Looking for a\nFullStack Web Developer?")}
         </h1>
         <h3 className="font-medium leading-normal px-10 text-4xl whitespace-pre-line sm:text-5xl sm:leading-normal">
-          {t("Let`s See if You Just\nFound One!")}
+          {t("Let's See if You Just\nFound One!")}
         </h3>
         <h2 className="font-medium leading-normal mt-48 text-4xl sm:text-5xl sm:leading-normal">
           {t("My Name is")}
