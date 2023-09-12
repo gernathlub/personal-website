@@ -1,0 +1,41 @@
+{
+    "Test": {
+        "test_server": "Testujeme server"
+    },
+    "Home": {
+        "My Name is": "Volám sa",
+        "Looking for a\nFullStack Web Developer?": "Hľadáte FullStack\nWebového Developera?",
+        "Let's See if You Just\nFound One!": "Pozrime sa, či ste jedného\npráve našli!",
+        "Database": "Databázy",
+        "And Little More": "A Trochu Viac"
+
+    },
+    "CareerNumbers": {
+        "Career in Numbers": "Kariéra v Číslach",
+        "Years of": "Rokov",
+        "Professional Experience": "Profesionálnych Skúseností",
+        "Programming": "Programovania",
+        "Successfull": "Úspešných",
+        "Projects": "Projektov",
+        "High-Level": "Vysokoúrovňových",
+        "Programming Languages": "Programovacích Jazykov",
+        "Frameworks": "Rámcov",
+        "Regulerly Used": "Pravidelne Využívaných",
+        "Lines": "Riadkov",
+        "of Code": "Kódu"
+    },
+    "Timeline": {
+        "A Brief\nHistory of Me": "Moja\nStručná História",
+        "First Coding Experience": "Prvé stretnutie s Kódom",
+        "Bachelor's Degree Graduation": "Ukončenie Bakalárskeho Štúdia",
+        "Contractor at Remaster": "Kontraktor v Remaster",
+        "Master's Degree Graduation": "Ukončenie Inžinierskeho Štúdia",
+        "Contractor at Esten": "Kontraktor v Esten"
+    },
+    "About": {
+        "Who am I?": "Kto som?",
+        "Kosice, Slovakia": "Košice, Slovensko",
+        "January": "Január",
+        "Master's Degree (Computer Science)": "Inžiniersky Titul (Informatika)"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "Test": {
+        "test_server": "Testing server"
+    },
+    "Home": {
+        "My Name is": "My Name is",
+        "Looking for a\nFullStack Web Developer?": "Looking for a\nFullStack Web Developer?",
+        "Let's See if You Just\nFound One!": "Let's See if You Just\nFound One!",
+        "Database": "Database",
+        "And Little More": "And Little More"
+    },
+    "CareerNumbers": {
+        "Career in Numbers": "Career in Numbers",
+        "Years of": "Years of",
+        "Professional Experience": "Professional Experience",
+        "Programming": "Programming",
+        "Successfull": "Successfull",
+        "Projects": "Projects",
+        "High-Level": "High-Level",
+        "Programming Languages": "Programming Languages",
+        "Frameworks": "Frameworks",
+        "Regulerly Used": "Regulerly Used",
+        "Lines": "Lines",
+        "of Code": "of Code"
+    },
+    "Timeline": {
+        "A Brief\nHistory of Me": "A Brief\nHistory of Me",
+        "First Coding Experience": "First Coding Experience",
+        "Bachelor's Degree Graduation": "Bachelor's Degree Graduation",
+        "Contractor at Remaster": "Contractor at Remaster",
+        "Master's Degree Graduation": "Master's Degree Graduation",
+        "Contractor at Esten": "Contractor at Esten "
+    },
+    "About": {
+        "Who am I?": "Who am I?",
+        "Kosice, Slovakia": "Kosice, Slovakia",
+        "January": "January",
+        "Master's Degree (Computer Science)": "Master's Degree (Computer Science)"
+    }
+}
