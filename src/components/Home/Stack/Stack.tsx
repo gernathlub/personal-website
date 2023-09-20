@@ -8,7 +8,7 @@ export default function Stack() {
 
   return (
     <ContentContainer extraClass="flex flex-col my-40">
-      <h2 className="font-semibold leading-relaxed mb-80 mt-40 text-5xl sm:text-6xl">
+      <h2 className="mb-80 mt-40">
         FullStack?
       </h2>
       <div className="flex-wrap justify-center space-y-60 w-full">
@@ -96,7 +96,7 @@ export default function Stack() {
         </TechSection>
       </div>
 
-      <h2 className="font-semibold leading-relaxed mb-40 mt-80 text-5xl text-primary sm:text-6xl">
+      <h2 className="mb-40 mt-80 text-primary">
         FullStack
       </h2>
     </ContentContainer>

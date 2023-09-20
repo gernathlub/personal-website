@@ -7,7 +7,7 @@ export default function CareerNumbers() {
 
   return (
     <ContentContainer>
-      <h2 className="font-semibold leading-relaxed pt-80 text-5xl sm:text-6xl">
+      <h2 className="pt-80">
         {t('Career in Numbers')}
       </h2>
 

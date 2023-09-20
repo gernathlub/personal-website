@@ -7,6 +7,18 @@ body {
     scrollbar-color: #124255 #0e1d23;
 }
 
+h1 {
+  @apply font-bold leading-relaxed text-5xl whitespace-pre-line sm:leading-relaxed sm:text-6xl;
+}
+
+h2 {
+  @apply font-semibold leading-relaxed text-5xl sm:text-6xl;
+}
+
+h3 {
+  @apply font-medium leading-normal text-4xl sm:text-5xl;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
