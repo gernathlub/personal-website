@@ -12,6 +12,7 @@ import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import PersonalInfoItem from "@/components/About/PersonalInfoItem";
 import Delimiter from "@/components/Delimiter";
 import { DelimiterTypeEnum } from "@/enums/DelimiterTypeEnum";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   const t = useTranslations("About");
@@ -19,7 +20,7 @@ export default function About() {
   return (
     <div className="pb-48 w-full">
       <ContentContainer>
-        <h1 className="mb-64 mt-36 px-18 md:mb-80 md:mt-48 md:px-22 xl:px-28">
+        <h1 className="mb-48 mt-36 px-18 md:mb-64 md:mt-48 md:px-22 xl:px-28">
           {t("Who am I?")}
         </h1>
 
@@ -69,29 +70,71 @@ export default function About() {
       <Delimiter type={DelimiterTypeEnum.DarkToDark} />
 
       <ContentContainer>
-        <div className="mt-80">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            repudiandae ab a recusandae odit odio mollitia error vel neque, vero
-            repellat debitis voluptatem rem maiores eaque, eius architecto
-            animi. Aliquid.
-          </p>
-          <p className="mt-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            repudiandae ab a recusandae odit odio mollitia error vel neque, vero
-            repellat debitis voluptatem rem maiores eaque, eius architecto
-            animi. Aliquid.
-          </p>
+        <h2 className="mt-60">{t("introduce")}</h2>
+        <div className="flex flex-col mb-36 mt-48 space-y-8 text-2xl">
+          <div>
+            <p>{t("my_name")}</p>
+            <p>{t("(short for Lubomir)")}</p>
+          </div>
+          <div>
+            <p>
+              {t(
+                "what_you_know"
+              )}
+            </p>
+            <p>{t("recap")}</p>
+          </div>
+
+          <div>{t("childhood")}</div>
+
+          <div>{t("school_years")}</div>
+
+          <div>
+            <p>{t("expand_stack")}</p>
+            <p>{t("contractor_at_esten")}</p>
+          </div>
         </div>
-        {/* <div className="text-4xl mt-40">
-        <FontAwesomeIcon
-                  icon={faFilePdf}
-                  className="mr-2 text-primary text-6xl -mb-3"
-                />
-                <a href="" className="hover:text-primary font-medium align-middle" download>
-                  Download CV
-                </a>
-        </div> */}
+      </ContentContainer>
+      <Delimiter type={DelimiterTypeEnum.DarkToSecondary} />
+      <ContentContainer extraClass="bg-secondary">
+        <h2 className="pb-40 pt-48">{t("Outside Work Hours")}</h2>
+        <div className="gap-24 grid grid-cols-1 pb-48 text-2xl lg:grid-cols-2">
+          <div className="">
+            <h3 className="mb-10 text-primary">{t("Algorithmization")}</h3>
+            <p>{t("algo_content")}</p>
+          </div>
+          <div className="">
+            <h3 className="mb-10 text-primary">{t("Outdoor Sports")}</h3>
+            <p>{t("sports_content")}</p>
+          </div>
+          <div className="">
+            <h3 className="mb-10 text-primary">{t("Traveling")}</h3>
+            <p>{t("traveling_content")}</p>
+          </div>
+          <div className="">
+            <h3 className="mb-10 text-primary">Sci-fi/Fantasy</h3>
+            <p>{t("scifi_content")}</p>
+          </div>
+        </div>
+      </ContentContainer>
+      <Delimiter type={DelimiterTypeEnum.SecondaryToDark} />
+      <ContentContainer>
+        {/* <h2 className="mt-48 mb-36">Contact Me</h2>
+        TODO */}
+
+        <div className="mt-40 text-4xl">
+          <FontAwesomeIcon
+            icon={faFilePdf}
+            className="-mb-3 mr-2 text-6xl text-primary"
+          />
+          <a
+            href=""
+            className="align-middle font-medium hover:text-primary"
+            download
+          >
+            {t("Download CV")}
+          </a>
+        </div>
       </ContentContainer>
     </div>
   );
