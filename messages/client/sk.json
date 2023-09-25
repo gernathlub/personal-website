@@ -1,0 +1,11 @@
+{
+    "Test": {
+        "test_client": "Testujeme klienta"
+    },
+    "Navigation": {
+        "Home": "Domov",
+        "Projects": "Projekty",
+        "About": "O Mne",
+        "Tech": "Technológie"
+    }
+}

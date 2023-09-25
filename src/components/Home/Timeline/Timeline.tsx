@@ -8,7 +8,7 @@ export default function Timeline() {
 
   return (
     <ContentContainer extraClass="bg-secondary">
-      <h2 className="font-semibold leading-normal pt-80 text-5xl whitespace-pre-line sm:text-6xl sm:leading-normal lg:whitespace-normal">
+      <h2 className="pt-80 whitespace-pre-line lg:whitespace-normal">
         {t("A Brief\nHistory of Me")}
       </h2>
       <div className="flex flex-row justify-center py-60 relative w-full">
@@ -22,7 +22,7 @@ export default function Timeline() {
 
           <TimelineItem
             year={2021}
-            title={t("Bachelor Degree Graduation")}
+            title={t("Bachelor's Degree Graduation")}
             redirPath="https://tuke.sk/"
             imgSrc="/logos/tuke.svg"
             extraClass="p-7 mt-1"
@@ -38,7 +38,7 @@ export default function Timeline() {
 
           <TimelineItem
             year={2023}
-            title={t("Master Degree Graduation")}
+            title={t("Master's Degree Graduation")}
             redirPath="https://tuke.sk/"
             imgSrc="/logos/tuke.svg"
             extraClass="p-7 mt-1"

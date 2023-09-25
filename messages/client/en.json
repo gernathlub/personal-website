@@ -1,0 +1,11 @@
+{
+    "Test": {
+        "test_client": "Testing client"
+    },
+    "Navigation": {
+        "Home": "Home",
+        "Projects": "Projects",
+        "About": "About",
+        "Tech": "Tech"
+    }
+}
