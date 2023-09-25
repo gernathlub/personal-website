@@ -45,4 +45,5 @@ h3 {
   mask-image: url(../../public/profile_mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  max-width: 100%;
 }

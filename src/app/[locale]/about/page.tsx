@@ -71,8 +71,8 @@ export default function About() {
       <Delimiter type={DelimiterTypeEnum.DarkToDark} />
 
       <ContentContainer>
-        <h2 className="mt-60">{t("introduce")}</h2>
-        <div className="flex flex-col mb-36 mt-48 space-y-8 text-2xl">
+        <h2 className="mt-60 px-3">{t("introduce")}</h2>
+        <div className="flex flex-col mb-36 mt-48 px-2 space-y-8 text-2xl sm:px-0">
           <div>
             <p>{t("my_name")}</p>
             <p>{t("(short for Lubomir)")}</p>
@@ -105,19 +105,17 @@ export default function About() {
       </ContentContainer>
       <Delimiter type={DelimiterTypeEnum.SecondaryToDark} />
       <ContentContainer>
-        <div className="mt-40 text-4xl">
+        <a
+          href="/pdf/CV.pdf"
+          className="align-middle flex flex-col font-medium justify-center mt-40 px-3 text-4xl hover:text-primary sm:flex-row"
+          download
+        >
           <FontAwesomeIcon
             icon={faFilePdf}
-            className="-mb-3 mr-2 text-6xl text-primary"
+            className="mb-4 text-6xl text-primary sm:mb-0 sm:mr-2 sm:-mt-3"
           />
-          <a
-            href="/pdf/CV.pdf"
-            className="align-middle font-medium hover:text-primary"
-            download
-          >
-            {t("Download CV")}
-          </a>
-        </div>
+          {t("Download CV")}
+        </a>
       </ContentContainer>
     </div>
   );
