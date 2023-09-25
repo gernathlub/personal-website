@@ -12,7 +12,10 @@ export default function NavMenu() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if(isOpen) toggleOpen(false)
+    if(isOpen) {
+      toggleOpen(false)
+      document.body.style.overflow = "auto"
+    }
   }, [pathname])
 
   function toggleMenu() {

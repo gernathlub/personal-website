@@ -2,7 +2,6 @@
 import Link from "next/link"
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-FontAwesomeIcon
 
 export default function NavLink({title, route, icon}: {title: string, route: string, icon: IconDefinition}) {
     return (

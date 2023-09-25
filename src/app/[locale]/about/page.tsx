@@ -72,7 +72,7 @@ export default function About() {
 
       <ContentContainer>
         <h2 className="mt-60 px-3">{t("introduce")}</h2>
-        <div className="flex flex-col mb-36 mt-48 px-2 space-y-8 text-2xl sm:px-0">
+        <div className="flex flex-col mb-36 mt-48 px-4 space-y-8 text-2xl sm:px-0">
           <div>
             <p>{t("my_name")}</p>
             <p>{t("(short for Lubomir)")}</p>
