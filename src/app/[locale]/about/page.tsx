@@ -13,6 +13,7 @@ import PersonalInfoItem from "@/components/About/PersonalInfoItem";
 import Delimiter from "@/components/Delimiter";
 import { DelimiterTypeEnum } from "@/enums/DelimiterTypeEnum";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LeisureTimeGridItem from "@/components/About/LeisureTimeGridItem";
 
 export default function About() {
   const t = useTranslations("About");
@@ -76,12 +77,9 @@ export default function About() {
             <p>{t("my_name")}</p>
             <p>{t("(short for Lubomir)")}</p>
           </div>
+
           <div>
-            <p>
-              {t(
-                "what_you_know"
-              )}
-            </p>
+            <p>{t("what_you_know")}</p>
             <p>{t("recap")}</p>
           </div>
 
@@ -99,22 +97,10 @@ export default function About() {
       <ContentContainer extraClass="bg-secondary">
         <h2 className="pb-40 pt-48">{t("Outside Work Hours")}</h2>
         <div className="gap-24 grid grid-cols-1 pb-48 text-2xl lg:grid-cols-2">
-          <div className="">
-            <h3 className="mb-10 text-primary">{t("Algorithmization")}</h3>
-            <p>{t("algo_content")}</p>
-          </div>
-          <div className="">
-            <h3 className="mb-10 text-primary">{t("Outdoor Sports")}</h3>
-            <p>{t("sports_content")}</p>
-          </div>
-          <div className="">
-            <h3 className="mb-10 text-primary">{t("Traveling")}</h3>
-            <p>{t("traveling_content")}</p>
-          </div>
-          <div className="">
-            <h3 className="mb-10 text-primary">Sci-fi/Fantasy</h3>
-            <p>{t("scifi_content")}</p>
-          </div>
+          <LeisureTimeGridItem title={ t("Algorithmization") } description={ t("algo_content") } />
+          <LeisureTimeGridItem title={ t("Outdoor Sports") } description={ t("sports_content") } />
+          <LeisureTimeGridItem title={ t("Traveling") } description={ t("traveling_content") } />
+          <LeisureTimeGridItem title="Sci-fi/Fantasy" description={ t("scifi_content") } />
         </div>
       </ContentContainer>
       <Delimiter type={DelimiterTypeEnum.SecondaryToDark} />
