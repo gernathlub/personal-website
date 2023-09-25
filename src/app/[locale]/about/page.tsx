@@ -119,16 +119,13 @@ export default function About() {
       </ContentContainer>
       <Delimiter type={DelimiterTypeEnum.SecondaryToDark} />
       <ContentContainer>
-        {/* <h2 className="mt-48 mb-36">Contact Me</h2>
-        TODO */}
-
         <div className="mt-40 text-4xl">
           <FontAwesomeIcon
             icon={faFilePdf}
             className="-mb-3 mr-2 text-6xl text-primary"
           />
           <a
-            href=""
+            href="/pdf/CV.pdf"
             className="align-middle font-medium hover:text-primary"
             download
           >
