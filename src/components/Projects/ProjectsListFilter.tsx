@@ -11,6 +11,7 @@ export default function ProjectsListFilter() {
           slug="rehapiano"
           title="RehaPiano"
           logo="/logos/estn-long.svg"
+          extraClass="mt-2 w-full"
         />
 
         <ProjectLink slug="eboard" logo="/logos/essity.svg" title="eBoard" />

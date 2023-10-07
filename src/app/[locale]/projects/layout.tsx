@@ -14,7 +14,7 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
         <ProjectsListFilter></ProjectsListFilter>
       </ContentContainer>
       <Delimiter/>
-      <div className="my-40">
+      <div className="mb-20 mt-40">
       { children }
       </div>
     </div>
