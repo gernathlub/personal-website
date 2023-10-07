@@ -56,6 +56,9 @@
         "Download CV": "Download CV"
     },
     "Projects": {
-        "Projects": "Projects"
+        "Projects": "Projects",
+        "Web Content Recommendation Service": "Web Content Recommendation Service",
+        "Open-Air Theatre App": "Open-Air Theatre App",
+        "Personal Website": "Personal Website"
     }
 }

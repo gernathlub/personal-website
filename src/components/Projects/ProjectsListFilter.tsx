@@ -1,13 +1,16 @@
+import { useTranslations } from "next-intl";
 import ProjectLink from "./ProjectLink";
 
 export default function ProjectsListFilter() {
+  const t = useTranslations("Projects")
+
   return (
     <div className="flex flex-col justify-center w-full">
       <div className="flex flex-wrap justify-center mb-10 w-full">
         <ProjectLink
           slug="rehapiano"
           title="RehaPiano"
-          logo="/logos/estenL.svg"
+          logo="/logos/estn-long.svg"
         />
 
         <ProjectLink slug="eboard" logo="/logos/essity.svg" title="eBoard" />
@@ -27,16 +30,16 @@ export default function ProjectsListFilter() {
       </div>
 
       <div className="flex flex-wrap justify-center w-full">
-        <ProjectLink slug="personal-web" title="Personal Website" />
+        <ProjectLink slug="personal-web" title={t("Personal Website")} />
 
         <ProjectLink
           slug="master-thesis"
-          title="Web Content Recommendation Service"
+          title={t("Web Content Recommendation Service")}
         />
 
         <ProjectLink
           slug="amfik"
-          title="Open-Air Theatre App"
+          title={t("Open-Air Theatre App")}
           logo="/logos/amfik.svg"
           extraClass="mx-auto w-3/4"
         />

@@ -14,7 +14,7 @@ export default function LocaleSwitch() {
     if (isPending) return
     var nextLocale = locale === 'en' ? 'sk' : 'en'
     startTransition(() => {
-      router.replace(pathname, {locale: nextLocale.toLowerCase()});
+      router.replace(pathname, {locale: nextLocale.toLowerCase(), scroll: false});
     });
   };
 

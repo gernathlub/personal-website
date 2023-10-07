@@ -20,7 +20,7 @@ export default function ProjectLink({ slug, logo, title, extraClass, noLogo }: {
       }, [params])
 
     return (
-        <Link href={`/projects/${slug}`} className={ `border-4 border-solid flex flex-col h-fit mx-5 p-5 rounded-xl w-60 ${ isActive ? 'border-primary' : 'border-dark hover:border-secondary' }` }>
+        <Link scroll={false} href={`/projects/${slug}`} className={ `border-4 border-solid duration-150 flex flex-col h-fit mx-5 p-5 rounded-xl transition-colors w-60 ${ isActive ? 'border-primary' : 'border-dark lg:hover:border-secondary' }` }>
             {
                 noLogo ? '': (
                     logo ? <Image src={ logo } alt="" width={ 100 } height={ 30 } className={ extraClass ? extraClass : 'w-full' }/> :
