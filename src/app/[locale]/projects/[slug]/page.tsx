@@ -87,7 +87,7 @@ export default function Project({
           {
             proj.link ?
             <ProjectAttr title={ t("Link") } icon={ faArrowUpRightFromSquare }>
-              { proj.link }
+              <a href={ proj.link } className="text-primary hover:font-medium" target="_blank">{ params.locale.toLowerCase() === 'sk' && proj.nameSk ? proj.nameSk : proj.nameEn }</a>
             </ProjectAttr> : ''
           }
 
