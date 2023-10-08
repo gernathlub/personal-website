@@ -9,14 +9,11 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex flex-col flex-grow justify-center">
-      <ContentContainer>
+      <ContentContainer extraClass="mb-20">
         <h1 className="mt-40 mb-56">{ t("Projects") }</h1>
         <ProjectsListFilter></ProjectsListFilter>
       </ContentContainer>
-      <Delimiter/>
-      <div className="mb-20 mt-40">
       { children }
-      </div>
     </div>
   );
 }
