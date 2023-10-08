@@ -54,5 +54,21 @@
         "traveling_content": "I have a passion in exploring new locations either histoty or nature appealing. My long term goal is to visit New Zealand one day.",
         "scifi_content": "Sci-fi and fantasy genres are the best. Doesn't matter if it is a movie, book or game. (also huge LOTR fan)",
         "Download CV": "Download CV"
+    },
+    "Projects": {
+        "Projects": "Projects",
+        "Web Content Recommendation Service": "Web Content Recommendation Service",
+        "Open-Air Theatre App": "Open-Air Theatre App",
+        "Personal Website": "Personal Website"
+    },
+    "ProjectDetail": {
+        "Technologies": "Technologies",
+        "Professional": "Professional",
+        "Own Initiative": "Own Initiative",
+        "Link": "Link",
+        "Start Date": "Start Date",
+        "End Date": "End Date",
+        "Related to": "Related to",
+        "Client": "Client"
     }
 }

@@ -33,6 +33,7 @@ export default function TimelineItem({
         <a
           href={redirPath}
           className="duration-200 overflow-visible opacity-0 relative transition-all group-hover/inner:opacity-100"
+          target="_blank"
         >
           {icon ? (
             <div className="mt-2.5">
