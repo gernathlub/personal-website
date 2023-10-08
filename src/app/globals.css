@@ -5,6 +5,7 @@
 body {
     scrollbar-width: thin;
     scrollbar-color: #124255 #0e1d23;
+    scroll-behavior: smooth;
 }
 
 h1 {

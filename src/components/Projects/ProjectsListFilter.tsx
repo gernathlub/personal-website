@@ -6,7 +6,7 @@ export default function ProjectsListFilter() {
 
   return (
     <div className="flex flex-col justify-center w-full">
-      <div className="flex flex-wrap justify-center mb-10 w-full">
+      <div className="flex flex-wrap justify-center mb-0 w-full lg:mb-10">
         <ProjectLink
           slug="rehapiano"
           title="RehaPiano"
