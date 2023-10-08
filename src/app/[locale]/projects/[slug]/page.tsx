@@ -10,14 +10,20 @@ import {
   faUserTie,
   faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons";
+import ProjectAttr from "@/components/Projects/ProjectAttr";
+import { useTranslations } from "next-intl";
+import Delimiter from "@/components/Delimiter";
 
 export default function Project({
   params,
 }: {
   params: { locale: string; slug: string };
 }) {
+  const t = useTranslations("ProjectDetail")
+
   type Project = {
-    name: string;
+    nameEn: string;
+    nameSk?: string;
     slug: string;
     technologies: string[];
     isPro: boolean;
@@ -32,7 +38,7 @@ export default function Project({
   };
 
   var proj: Project = {
-    name: "Vroom",
+    nameEn: "Vroom",
     slug: "vroom",
     technologies: [
       "AWS",
@@ -55,66 +61,68 @@ export default function Project({
     descriptionSk: "",
   };
 
+  const dateOptions: Intl.DateTimeFormatOptions = {year: "numeric", month: "long", day: "numeric", weekday: undefined}
+
   return (
-    <ContentContainer>
-      <h2>{proj.name}</h2>
+    <div className="mb-20" id="proj">
+    <Delimiter/>
+    <ContentContainer extraClass="mt-40">
+      <h2>{ params.locale.toLowerCase() === 'sk' && proj.nameSk ? proj.nameSk : proj.nameEn }</h2>
 
       <div className="flex flex-col justify-center mx-auto text-left text-xl md:text-2xl md:text-center ">
         <span className="flex flex-row justify-start mb-3 mt-10 text-2xl md:justify-center md:text-3xl">
-          <FontAwesomeIcon icon={faCode} />{" "}
-          <span className="font-medium ml-2 mr-4 -mt-0.5">Technologies:</span>
+          <FontAwesomeIcon icon={ faCode } />
+          <span className="font-medium ml-2 mr-4 -mt-0.5">{ t("Technologies") }:</span>
         </span>
-        <span className="-mt-0.5">{proj.technologies.join(", ")}</span>
+        <span className="-mt-0.5">{ proj.technologies.join(", ") }</span>
       </div>
 
-      <div className="divide-none divide-secondary divide-x-4 gap-5 grid grid-cols-1 mt-20 lg:divide-solid lg:grid-cols-2">
+      <div className="divide-none divide-secondary divide-x-4 gap-5 grid grid-cols-1 mt-10 md:mt-20 lg:divide-solid lg:grid-cols-2">
         <div className="flex flex-col h-fit my-auto py-2 space-y-3 text-left text-xl">
-          {proj.isPro ? (
-            <div className="flex flex-row">
-              <FontAwesomeIcon icon={faUserTie} />{" "}
-              <span className="font-medium ml-2 mr-4 -mt-0.5">
-                Professional
-              </span>
-            </div>
-          ) : (
-            <div className="flex flex-row">
-              <FontAwesomeIcon icon={faPuzzlePiece} />{" "}
-              <span className="font-medium ml-2 mr-4 -mt-0.5">
-                Own Initiative
-              </span>
-            </div>
-          )}
+          {proj.isPro ?
+            <ProjectAttr title={ t("Professional") } icon={ faUserTie }/>:
+            <ProjectAttr title={ t("Own Initiative") } icon={ faPuzzlePiece }/>
+          }
 
-          <div className="flex flex-row">
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
-            <span className="font-medium ml-2 mr-4 -mt-0.5">Link:</span>{" "}
-            <span className="-mt-0.5">{proj.link}</span>
-          </div>
-          <div className="flex flex-row">
-            <FontAwesomeIcon icon={faPlay} />{" "}
-            <span className="font-medium ml-2 mr-4 -mt-0.5">Start Date:</span>{" "}
-            <span className="-mt-0.5">{proj.startDate.toLocaleString()}</span>
-          </div>
-          <div className="flex flex-row">
-            <FontAwesomeIcon icon={faFlagCheckered} />{" "}
-            <span className="font-medium ml-2 mr-4 -mt-0.5">End Date:</span>{" "}
-            <span className="-mt-0.5">{proj.endDate?.toLocaleString()}</span>
-          </div>
-          <div className="flex flex-row">
-            <FontAwesomeIcon icon={faSuitcase} />{" "}
-            <span className="font-medium ml-2 mr-4 -mt-0.5">Related to:</span>
-            <span className="-mt-0.5">{proj.relatedTo?.join(", ")}</span>
-          </div>
-          <div className="flex flex-row">
-            <FontAwesomeIcon icon={faAddressBook} />{" "}
-            <span className="font-medium ml-2 mr-4 -mt-0.5">Client:</span>
-            <span className="-mt-0.5">{proj.client}</span>
-          </div>
+          {
+            proj.link ?
+            <ProjectAttr title={ t("Link") } icon={ faArrowUpRightFromSquare }>
+              { proj.link }
+            </ProjectAttr> : ''
+          }
+
+          <ProjectAttr title={ t("Start Date") } icon={ faPlay }>
+            { proj.startDate.toLocaleDateString(params.locale, dateOptions) }
+          </ProjectAttr>
+
+          {
+            proj.endDate ?
+            <ProjectAttr title={ t("End Date") } icon={ faFlagCheckered }>
+              { proj.endDate?.toLocaleString(params.locale, dateOptions) }
+            </ProjectAttr> : ''
+          }
+
+          {
+            proj.relatedTo && proj.relatedTo.length > 0 ?
+            <ProjectAttr title={ t("Related to") } icon={ faSuitcase }>
+              { proj.relatedTo?.join(", ") }
+            </ProjectAttr> : ''
+          }
+
+          {
+            proj.client ?
+            <ProjectAttr title={ t("Client") } icon={ faAddressBook }>
+              { proj.client }
+            </ProjectAttr> : ''
+          }
+
         </div>
+
         <div className="py-7 text-left text-xl lg:pl-7">
-          {proj.descriptionEn}
+          { params.locale.toLowerCase() === 'sk' ? proj.descriptionSk : proj.descriptionEn }
         </div>
       </div>
     </ContentContainer>
+    </div>
   );
 }

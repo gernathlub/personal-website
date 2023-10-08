@@ -60,5 +60,15 @@
         "Web Content Recommendation Service": "Web Content Recommendation Service",
         "Open-Air Theatre App": "Open-Air Theatre App",
         "Personal Website": "Personal Website"
+    },
+    "ProjectDetail": {
+        "Technologies": "Technologies",
+        "Professional": "Professional",
+        "Own Initiative": "Own Initiative",
+        "Link": "Link",
+        "Start Date": "Start Date",
+        "End Date": "End Date",
+        "Related to": "Related to",
+        "Client": "Client"
     }
 }

@@ -61,5 +61,15 @@
         "Web Content Recommendation Service": "Systém Odporúčania Obsahu Webu",
         "Open-Air Theatre App": "Amfiteáter Levoča",
         "Personal Website": "Osobná Webstránka"
+    },
+    "ProjectDetail": {
+        "Technologies": "Technológie",
+        "Professional": "Profesionálny",
+        "Own Initiative": "Vlastná Iniciatíva",
+        "Link": "Link",
+        "Start Date": "Začiatok",
+        "End Date": "Koniec",
+        "Related to": "Práca pre",
+        "Client": "Klient"
     }
 }
