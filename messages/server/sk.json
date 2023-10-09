@@ -71,5 +71,20 @@
         "End Date": "Koniec",
         "Related to": "Práca pre",
         "Client": "Klient"
+    },
+    "Tech": {
+        "Technologies": "Technológie",
+        "Low Range": "Nízke Hodnoty",
+        "Mid Range": "Stredné Hodnoty",
+        "High Range": "Vysoké Hodnoty",
+        "eval_process": "Úrovne všetkých nasledujúcich schopností sú určené na základe sebahodnotenia s nasledujúcou škálou hodnôt",
+        "low_range_descr": "Schopnosť využívať základné vlastnosti a princípy technológie s občasnou potrebou využitia dokumentácie alebo internetu.",
+        "mid_range_descr": "Poznanie a aplikácia základných princípov bez potreby dopomoci. Schopnosť využívať pokročilé vlastnosti technológie s občasnou potrebou \"googlenia\"",
+        "high_range_descr": "Bezproblémové využívanie základných i pokročilých funkcionalít. Rozsiahle poznatky jadra systému a schopnosť úpravy (alebo rozšírenia) technológie podľa potreby (s pomocou dokumentácie a internetu)",
+        "Programming and Markup Languages": "Programovacie a Značkovacie Jazyky",
+        "Frameworks and Libraries": "Frameworky a Knižnice",
+        "Databases": "Databázy",
+        "Development and Design Tools": "Vývojárske a Dizajnérske Nástroje",
+        "Cloud and DevOps": "Cloud a DevOps"
     }
 }

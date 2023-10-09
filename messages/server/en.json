@@ -70,5 +70,20 @@
         "End Date": "End Date",
         "Related to": "Related to",
         "Client": "Client"
+    },
+    "Tech": {
+        "Technologies": "Technologies",
+        "Low Range": "Low Range",
+        "Mid Range": "Mid Range",
+        "High Range": "High Range",
+        "eval_process": "All following skills are evaluated based on self-evaluation, with following scale",
+        "low_range_descr": "Ability to use the technology (meaning its basic and the most commoly used features) with occasional need of help from docs. or internet.",
+        "mid_range_descr": "Knowing majority of basic features without need of docs.. Ability to use advanced features with occasional need to \"google\" a thing or two.",
+        "high_range_descr": "Using majority of basic and advanced features without any problem. Deep knowledge of systems core and ability to adjust (or extend) the technology with help of the docs..",
+        "Programming and Markup Languages": "Programming and Markup Languages",
+        "Frameworks and Libraries": "Frameworks and Libraries",
+        "Databases": "Databases",
+        "Development and Design Tools": "Development and Design Tools",
+        "Cloud and DevOps": "Cloud and DevOps"
     }
 }
