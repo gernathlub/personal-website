@@ -11,7 +11,6 @@ export default function NavLink({title, route, icon}: {title: string, route: str
 
     useEffect(() => {
         setActive(route.split('/')[1] === pathname.split('/')[1])
-        console.log(`${route} ${isActive}`)
     }, [pathname])
 
     return (

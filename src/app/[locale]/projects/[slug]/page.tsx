@@ -13,6 +13,14 @@ import {
 import ProjectAttr from "@/components/Projects/ProjectAttr";
 import { useTranslations } from "next-intl";
 import Delimiter from "@/components/Delimiter";
+import { Project, projectList } from "@/objects/Projects";
+import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  return projectList.map((p) => ({
+    slug: p.slug,
+  }))
+}
 
 export default function Project({
   params,
@@ -21,45 +29,8 @@ export default function Project({
 }) {
   const t = useTranslations("ProjectDetail")
 
-  type Project = {
-    nameEn: string;
-    nameSk?: string;
-    slug: string;
-    technologies: string[];
-    isPro: boolean;
-    link?: string;
-    startDate: Date;
-    endDate?: Date;
-    relatedTo?: string[];
-    client: string;
-    logoStaticPath?: string;
-    descriptionEn: string;
-    descriptionSk: string;
-  };
-
-  var proj: Project = {
-    nameEn: "Vroom",
-    slug: "vroom",
-    technologies: [
-      "AWS",
-      "Django",
-      "HTMX",
-      "Serverless",
-      "TailwindCSS",
-      "PostgreSQL",
-      "Docker",
-    ],
-    isPro: true,
-    link: "https://vroom.be",
-    startDate: new Date("2021-10-01"),
-    endDate: new Date("2022-12-31"),
-    relatedTo: ["Remaster Solutions"],
-    client: "Mobly",
-    logoStaticPath: "/logos/vroom.svg",
-    descriptionEn:
-      "Online car dealership and magazine platform implementation as a contractor for Remaster Solutions for customer Mobly(.be). Focused primarily on Django framework programming - both backend (Python) and frontend (Javascript, Tailwind, HTMX). Actively participating in third-party services integration. Involved in designing the system and data flow architecture. In later stages of development, I also took over the tech lead duties, managing the development team and the development flow of the project as well.",
-    descriptionSk: "",
-  };
+  const proj: Project | undefined = projectList.find((p) => p.slug === params.slug)
+  if (!proj) notFound()
 
   const dateOptions: Intl.DateTimeFormatOptions = {year: "numeric", month: "long", day: "numeric", weekday: undefined}
 
