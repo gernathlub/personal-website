@@ -85,5 +85,8 @@
         "Databases": "Databases",
         "Development and Design Tools": "Development and Design Tools",
         "Cloud and DevOps": "Cloud and DevOps"
+    },
+    "NotFound" : {
+        "Project you are looking for was not found": "Project you are looking for was not found."
     }
 }

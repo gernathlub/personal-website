@@ -86,5 +86,8 @@
         "Databases": "Databázy",
         "Development and Design Tools": "Vývojárske a Dizajnérske Nástroje",
         "Cloud and DevOps": "Cloud a DevOps"
+    },
+    "NotFound" : {
+        "Project you are looking for was not found": "Projekt, ktorý hľadáte, nebol nájdený."
     }
 }
