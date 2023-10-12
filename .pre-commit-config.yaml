@@ -11,7 +11,7 @@ repos:
     -   id: check-merge-conflict
     -   id: double-quote-string-fixer
     -   id: no-commit-to-branch
-        args: ['--branch', 'main', '--branch', 'staging']
+        args: ['--branch', 'main', '--branch', 'dev']
 
 -   repo: https://github.com/pre-commit/mirrors-eslint
     rev: ''
