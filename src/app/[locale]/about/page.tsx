@@ -26,9 +26,9 @@ export default function About() {
         </h1>
 
         <div className="flex flex-col items-center justify-center mb-48 lg:flex-row lg:justify-normal">
-          <div className="h-auto overflow-hidden relative w-full lg:w-1/2">
+          <div className="h-auto overflow-hidden relative w-full lg:mt-14 lg:w-1/2">
             <Image
-              src={"/profilePhoto.jpg"}
+              src={"/pv2c_2.jpg"}
               alt="ProfilePhoto"
               width={600}
               height={400}
@@ -36,7 +36,7 @@ export default function About() {
             ></Image>
           </div>
 
-          <div className="flex flex-col mt-10 lg:mt-0 w-full lg:w-1/2 text-center lg:text-left mb-10 space-y-3 my-auto">
+          <div className="flex flex-col mb-10 mt-10 my-auto pl-0 text-center space-y-3 w-full lg:pl-4 lg:mt-0 lg:text-left lg:w-1/2">
             <PersonalInfoItem icon={faUser}>Ľubomír Gernáth</PersonalInfoItem>
 
             <PersonalInfoItem
