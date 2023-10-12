@@ -61,8 +61,9 @@ export const projectList: Project[] = [
     relatedTo: ["Remaster Solutions"],
     client: "Baloise",
     logoStaticPath: "/logos/baloise.svg",
-    descriptionEn: "Online web tool providing a complex car insurance management platform to the brokers of the customer, The Baloise Group (Belgium). Continuum development of a web application consisting of the Django Rest Framework with PostgreSQL and front-end implementation in React. Among others, working on system internationalisation and integration of translation services. Development of new React app features with extensive usage of Redux and TailwindCSS. Front-end migration of the React application from deprecated create-react-app dsolution to Next.js framework",
-    descriptionSk: "",
+    descriptionEn:
+    "An online web tool providing a comprehensive car insurance management platform for the customer's brokers, The Baloise Group (Belgium). The project involves the continuous development of a web application consisting of the Django Rest Framework with PostgreSQL, as well as front-end implementation in React. Additionally, we were working on system internationalization and the integration of translation services. We were also developing new React app features with extensive usage of Redux and TailwindCSS. Furthermore, there is a front-end migration of the React application from the deprecated create-react-app solution to the Next.js framework.",
+    descriptionSk: "Online webový nástroj poskytujúci komplexnú platformu na správu poistky automobilov pre maklérov zákazníka, Baloise Group (Belgicko). Projekt zahŕňa kontinuálny vývoj webovej aplikácie pozostávajúcej z Django Rest Frameworku s PostgreSQL a implementáciu front-endu v Reacte. Okrem toho práca na projekte zahŕňala internacionalizáciu systému a integráciu služieb prekladu. Nové funkcie aplikácie React boli implementované s rozsiahlym využitím Reduxu a TailwindCSS. Taktiež prebehla migrácia front-endovej aplikácie React zo zastaranej create-react-app na Next.js.",
   },
   {
     nameEn: "eBoard",
@@ -81,8 +82,8 @@ export const projectList: Project[] = [
     client: "Essity",
     logoStaticPath: "/logos/essity.svg",
     descriptionEn:
-      "Full stack developer role on implementation of web interface integrating various systems into one application displayed on a large touch screen. It digitizes processes and simplifies the work of operators and managers directly in production. It collects and concentrates data that has been lost until now and provides analytical outputs on it, which serves to increase safety and quality and thus contributes to the factory's profitability.",
-    descriptionSk: "",
+    "Taking on the role of a full-stack developer for the implementation of a web interface that integrates various systems into a single application displayed on a large touchscreen. This interface digitizes processes and streamlines the work of operators and managers directly within the production environment. It gathers and consolidates data that was previously lost and provides analytical insights, contributing to enhanced safety, quality, and ultimately boosting the factory's profitability.",
+    descriptionSk: "V rámci funkcie full stack developera som sa zaoberal implementáciou webového rozhrania, integrujúceho rôzne systémy do jednej aplikácie zobrazovanej na veľkom dotykovom displeji. Toto rozhranie digitalizuje procesy a zjednodušuje prácu operátorov a manažérov priamo výrobnom prostredí. Získava a sústreďuje údaje, ktoré boli doteraz stratené, a poskytuje analytické výstupy, prispievajúce k zvýšeniu bezpečnosti, kvality a tým i k ziskovosti továrne.",
   },
   {
     nameEn: "Open-Air Theatre App",
@@ -101,8 +102,8 @@ export const projectList: Project[] = [
     endDate: new Date("2022-09-04"),
     logoStaticPath: "/logos/amfik.svg",
     descriptionEn:
-      "Freelance project for a student civic association involving the design and implementation of a full stack web application and its UI. UI created in Figma. Main technology Django (REST) framework with SQLite database. Frontend implemented in React with usage of Redux",
-    descriptionSk: "",
+    "I undertook a solo freelance project for a student civic association, which entailed designing and implementing a full-stack web application along with its user interface (UI). The UI was created in Figma. The primary technology used was the Django (REST) framework with an SQLite database, and the frontend was implemented in React with the use of Redux. The goal of the project was creating website promoting civic association, providing information about organized public events and allowing community donations to the old open-air theatre restoration.",
+    descriptionSk: "Zaoberal som sa samostatným projektom pre študentskú občiansku organizáciu, ktorý zahŕňal návrh a implementáciu plnohodnotnej webovej aplikácie a jej užívateľského rozhrania (UI). UI bolo vytvorené v programe Figma. Hlavnou technológiou použitou pri tomto projekte bol rámec Django (REST) s databázou SQLite a frontend bol implementovaný v Reacte s využitím Reduxu. Cieľom projektu bolo vytvorenie webstránky na propagáciu občianskeho združenia a jeho aktivít, poskytovanie informácií o organizovaných podujatiach a umožnenie finančnej pomoci s rekonštrukciou starého amfiteátra.",
   },
   {
     nameEn: "Personal Website",
@@ -120,8 +121,8 @@ export const projectList: Project[] = [
     link: "https://gernath.net",
     startDate: new Date("2023-09-05"),
     descriptionEn:
-      "",
-    descriptionSk: "",
+      "My personal website serves as a platform for promoting myself and showcasing my skills as a full-stack software developer. In addition to this, the motivation behind this project was to create a functional piece of code that I can share with anyone without violating a non-disclosure agreement (NDA). The website is continuously evolving, and you can find the source code on my GitHub profile. There, you can also track the current development status and check out plans for the future (take a look at the milestones and issues section). The application is written in Next.js 13, following an App Directory approach, and it is deployed on Vercel.",
+    descriptionSk: "Moja osobná webová stránka slúžiaca ako platforma na propagáciu môjho profilu a prezentáciu mojich zručností ako full-stack softvérového vývojára. Okrem toho bol dôvodom tohto projektu aj zámer vytvoriť funkčný kód, ktorý môžem zdieľať s kýmkoľvek bez porušenia zmluvy o zachovaní dôvernosti (NDA). Webová stránka sa neustále vyvíja, a jej zdrojový kód nájdete na mojom GitHub profile. Tam môžete sledovať aj aktuálny stav vývoja a plány do budúcnosti (pozrite si sekciu míľniky a problémy). Aplikácia je naprogramovaná v Next.js 13 s využitím \"App Directory\" prístupu a je nasadená na platforme Vercel."
   },
   {
     nameEn: "Web Content Recommendation Service",
@@ -143,8 +144,8 @@ export const projectList: Project[] = [
     endDate: new Date("2023-03-31"),
     relatedTo: ["Remaster Solutions", "TUKE"],
     descriptionEn:
-      "Recommendation service for a Django (with PostgreSQL) web application with minimal usage of financial and computational resources, optimised for AWS cloud deployment. Golang Lambda functions. Data embedding using NLP algorithms. Recommendations based on Chebyshev user-object vector similarity",
-    descriptionSk: "",
+    "This project involves creating a recommendation service for a Django web application with PostgreSQL, with a focus on minimizing the use of financial and computational resources. The system is optimized for deployment on the AWS cloud infrastructure and utilizes Golang Lambda functions for efficient processing. Data embedding is achieved using NLP algorithms, and recommendations are generated based on Chebyshev user-object vector similarity.",
+    descriptionSk: "Tento projekt zahŕňal vytvorenie služby na odporúčanie pre webovú aplikáciu Django s použitím PostgreSQL, s dôrazom na minimalizáciu finančných a výpočtových zdrojov. Systém je optimalizovaný pre nasadenie v cloudovom prostredí AWS a využíva Golang Lambda funkcie na efektívne spracovanie dát. Embedovanie údajov je dosiahnuté pomocou algoritmov pre spracovanie prirodzeného jazyka (NLP), a odporúčania sú generované na základe podobnosti vektorov používateľa a objektu pomocou Chebyshevovej metriky vzdialenosti.",
   },
   {
     nameEn: "RehaPiano",
@@ -153,7 +154,6 @@ export const projectList: Project[] = [
       "Python",
       "RaspberyPi",
       "WebSocket",
-      "AioSerial",
       "Docker"
     ],
     isPro: true,
@@ -161,7 +161,7 @@ export const projectList: Project[] = [
     relatedTo: ["Esten"],
     logoStaticPath: "/logos/esten.svg",
     descriptionEn:
-      "",
-    descriptionSk: "",
+    "Development of the software necessary for a rehabilitation and treatment monitoring hardware device in Python. More information will be added later since the project is still under development, and a non-disclosure agreement (NDA) may apply to all the project details.",
+    descriptionSk: "Vývoj softvéru potrebného pre zariadenie na rehabilitáciu a monitorovanie progresu liečby v jazyku Python. Ďalšie informácie budú pridané neskôr, pretože projekt je stále vo vývoji, a na všetky podrobnosti projektu sa môže vzťahovať zmluva o zachovaní dôvernosti (NDA).",
   },
 ];
