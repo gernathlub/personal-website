@@ -1,0 +1,93 @@
+{
+    "Test": {
+        "test_server": "Testujeme server"
+    },
+    "Home": {
+        "My Name is": "Volám sa",
+        "Looking for a\nFullStack Web Developer?": "Hľadáte FullStack\nWebového Developera?",
+        "Let's See if You Just\nFound One!": "Pozrime sa, či ste jedného\npráve našli!",
+        "Database": "Databázy",
+        "And Little More": "A Trochu Viac"
+
+    },
+    "CareerNumbers": {
+        "Career in Numbers": "Kariéra v Číslach",
+        "Years of": "Rokov",
+        "Professional Experience": "Profesionálnych Skúseností",
+        "Programming": "Programovania",
+        "Successfull": "Úspešných",
+        "Projects": "Projektov",
+        "High-Level": "Vysokoúrovňových",
+        "Programming Languages": "Programovacích Jazykov",
+        "Frameworks": "Rámcov",
+        "Regulerly Used": "Pravidelne Využívaných",
+        "Lines": "Riadkov",
+        "of Code": "Kódu"
+    },
+    "Timeline": {
+        "A Brief\nHistory of Me": "Moja\nStručná História",
+        "First Coding Experience": "Prvé stretnutie s Kódom",
+        "Bachelor's Degree Graduation": "Ukončenie Bakalárskeho Štúdia",
+        "Contractor at Remaster": "Kontraktor v Remaster",
+        "Master's Degree Graduation": "Ukončenie Inžinierskeho Štúdia",
+        "Contractor at Esten": "Kontraktor v Esten"
+    },
+    "About": {
+        "Who am I?": "Kto som?",
+        "Kosice, Slovakia": "Košice, Slovensko",
+        "January": "Január",
+        "Master's Degree (Computer Science)": "Inžiniersky Titul (Informatika)",
+        "introduce": "Rád by som sa predstavil",
+        "my_name": "Volám sa Ľubo",
+        "(short for Lubomir)": "(skrátene pre Ľubomír)",
+        "what_you_know": "Takže už viete, že som softvérový inzinier žijúci na Slovensku.",
+        "recap": "Ako som sem dospel? Tu je stručné zhrnutie.",
+        "childhood": "Už ako dieťa som miloval riešenie logických úloh, matematiku a sci-fi. Počas týnedžerských rokov som sa profesionálne venoval behu na lyžiach, keďže som okrem iného mal záľubu aj v outdoorových športoch. Po úspešnom ukončení gymnázia v Levoči, som sa rozhodol ísť študovať informatiku na Technickej Univerzite v Košiciach.",
+        "school_years": "Počas prázdnin po letnom semestri prvého ročníka, som sa zúčastnil Work and Travel programu v USA, kde som pracoval ako plavčík počas štyroch mesiacov (viem, čo sa chcete opýtať; Nie nikto sa neutopil :D). Po ukončení bakalárskeho štúdia som začal pracovať ako fullstack webový developer v Remaster Solutions, s hlavným zameraním na Django a React. Na jar 2023 som úspešne ukončil inžinierske štúdium.",
+        "expand_stack": "Po tom som sa rozhodol rozšíriť si obzory a viac zameral som sa .Net a Angular.",
+        "contractor_at_esten": "V súčasnosti pracujem ako kontraktor v Esten.",
+        "Outside Work Hours": "Mimo Pracovného Času",
+        "Algorithmization": "Algoritmizácia",
+        "algo_content": "Milujem riešenie logických hlavolamov a nachádzanie elegantných riešení programátorských výziev a hádaniek.",
+        "Outdoor Sports": "Šport",
+        "sports_content": "Keďže veľa času trávim prácou pred obrazovkou, vo voľnom čase mám rád relaxačné i kompetetívne outdoorové športové aktivity. Hlavne beh, cyklistiku, turistiku a bežecké lyžovanie.",
+        "Traveling": "Cestovanie",
+        "traveling_content": "Mám vášeň pre spoznávanie nových miest, či už zaujímavých svojou prírodou alebo históriou. Mojím dlhodobým cieľom je jedného dňa navštíviť Nový Zéland.",
+        "scifi_content": "Sci-fi and fantasy sú najlepšie žánre. Nezáleží či sa jedná o film, knihu alebo hru. (taktiež som veľký fanúšik Pána Prsteňov)",
+        "Download CV": "Stiahnuť Životopis"
+    },
+    "Projects": {
+        "Projects": "Projekty",
+        "Web Content Recommendation Service": "Systém Odporúčania Obsahu Webu",
+        "Open-Air Theatre App": "Amfiteáter Levoča",
+        "Personal Website": "Osobná Webstránka"
+    },
+    "ProjectDetail": {
+        "Technologies": "Technológie",
+        "Professional": "Profesionálny",
+        "Own Initiative": "Vlastná Iniciatíva",
+        "Link": "Link",
+        "Start Date": "Začiatok",
+        "End Date": "Koniec",
+        "Related to": "Práca pre",
+        "Client": "Klient"
+    },
+    "Tech": {
+        "Technologies": "Technológie",
+        "Low Range": "Nízke Hodnoty",
+        "Mid Range": "Stredné Hodnoty",
+        "High Range": "Vysoké Hodnoty",
+        "eval_process": "Úrovne všetkých nasledujúcich schopností sú určené na základe sebahodnotenia s nasledujúcou škálou hodnôt",
+        "low_range_descr": "Schopnosť využívať základné vlastnosti a princípy technológie s občasnou potrebou využitia dokumentácie alebo internetu.",
+        "mid_range_descr": "Poznanie a aplikácia základných princípov bez potreby dopomoci. Schopnosť využívať pokročilé vlastnosti technológie s občasnou potrebou \"googlenia\"",
+        "high_range_descr": "Bezproblémové využívanie základných i pokročilých funkcionalít. Rozsiahle poznatky jadra systému a schopnosť úpravy (alebo rozšírenia) technológie podľa potreby (s pomocou dokumentácie a internetu)",
+        "Programming and Markup Languages": "Programovacie a Značkovacie Jazyky",
+        "Frameworks and Libraries": "Frameworky a Knižnice",
+        "Databases": "Databázy",
+        "Development and Design Tools": "Vývojárske a Dizajnérske Nástroje",
+        "Cloud and DevOps": "Cloud a DevOps"
+    },
+    "NotFound" : {
+        "Project you are looking for was not found": "Projekt, ktorý hľadáte, nebol nájdený."
+    }
+}

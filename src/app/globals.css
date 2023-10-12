@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    scrollbar-width: thin;
+    scrollbar-color: #124255 #0e1d23;
+    scroll-behavior: smooth;
+}
+
+h1 {
+  @apply font-bold leading-relaxed text-5xl whitespace-pre-line sm:leading-relaxed sm:text-6xl;
+}
+
+h2 {
+  @apply font-semibold leading-relaxed text-5xl sm:text-6xl;
+}
+
+h3 {
+  @apply font-medium leading-normal text-4xl sm:text-5xl;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e1d23
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #124255;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #195f71;
+}
+
+.profile-mask {
+  -webkit-mask-image: url(../../public/profile_mask.svg);
+  mask-image: url(../../public/profile_mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  max-width: 100%;
 }

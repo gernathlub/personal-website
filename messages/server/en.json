@@ -1,0 +1,92 @@
+{
+    "Test": {
+        "test_server": "Testing server"
+    },
+    "Home": {
+        "My Name is": "My Name is",
+        "Looking for a\nFullStack Web Developer?": "Looking for a\nFullStack Web Developer?",
+        "Let's See if You Just\nFound One!": "Let's See if You Just\nFound One!",
+        "Database": "Database",
+        "And Little More": "And Little More"
+    },
+    "CareerNumbers": {
+        "Career in Numbers": "Career in Numbers",
+        "Years of": "Years of",
+        "Professional Experience": "Professional Experience",
+        "Programming": "Programming",
+        "Successfull": "Successfull",
+        "Projects": "Projects",
+        "High-Level": "High-Level",
+        "Programming Languages": "Programming Languages",
+        "Frameworks": "Frameworks",
+        "Regulerly Used": "Regulerly Used",
+        "Lines": "Lines",
+        "of Code": "of Code"
+    },
+    "Timeline": {
+        "A Brief\nHistory of Me": "A Brief\nHistory of Me",
+        "First Coding Experience": "First Coding Experience",
+        "Bachelor's Degree Graduation": "Bachelor's Degree Graduation",
+        "Contractor at Remaster": "Contractor at Remaster",
+        "Master's Degree Graduation": "Master's Degree Graduation",
+        "Contractor at Esten": "Contractor at Esten "
+    },
+    "About": {
+        "Who am I?": "Who am I?",
+        "Kosice, Slovakia": "Kosice, Slovakia",
+        "January": "January",
+        "Master's Degree (Computer Science)": "Master's Degree (Computer Science)",
+        "introduce": "Let me introduce myself",
+        "my_name": "My name is Lubo.",
+        "(short for Lubomir)": "(short for Lubomir)",
+        "what_you_know": "So you already know, that I am software engeneer based in Slovakia.",
+        "recap": "But how did I get here? Here is a quick recap.",
+        "childhood": "As I was a child, I loved solving logical puzzles, math and sci-fi. During my teenage years, I was a professional XC skier as among mentioned I have a passion for outdoor sports. After graduation of a grammar school in Levoca, I decided to study IT at Technical University of Kosice.",
+        "school_years": "In the course of summer break of the first year of the college, I participated in Work and Travel program in the US as a lifeguard for four months (I know what you want to ask; No, nobody drowned :D). After getting my bachelor's degree, I started working as a full-stack web developer at Remaster Solutions with Django and React as main scope. In the spring of 2023, I successfully graduated with a master's degree.",
+        "expand_stack": "After that, I decided to expand my stack a little, so I partialy switched to .Net and Angular.",
+        "contractor_at_esten": "At the present, I am a contractor web developer at Esten.",
+        "Outside Work Hours": "Outside Work Hours",
+        "Algorithmization": "Algorithmization",
+        "algo_content": "I love solving logical puzzles and finding the most elegant solutions for programing challenges and riddles.",
+        "Outdoor Sports": "Outdoor Sports",
+        "sports_content": "As I spend a lot of time working in front of a screen, I love relaxing and competitive outdoor sports activities. Mostly running, cycling, hiking and XC skiing.",
+        "Traveling": "Traveling",
+        "traveling_content": "I have a passion in exploring new locations either histoty or nature appealing. My long term goal is to visit New Zealand one day.",
+        "scifi_content": "Sci-fi and fantasy genres are the best. Doesn't matter if it is a movie, book or game. (also huge LOTR fan)",
+        "Download CV": "Download CV"
+    },
+    "Projects": {
+        "Projects": "Projects",
+        "Web Content Recommendation Service": "Web Content Recommendation Service",
+        "Open-Air Theatre App": "Open-Air Theatre App",
+        "Personal Website": "Personal Website"
+    },
+    "ProjectDetail": {
+        "Technologies": "Technologies",
+        "Professional": "Professional",
+        "Own Initiative": "Own Initiative",
+        "Link": "Link",
+        "Start Date": "Start Date",
+        "End Date": "End Date",
+        "Related to": "Related to",
+        "Client": "Client"
+    },
+    "Tech": {
+        "Technologies": "Technologies",
+        "Low Range": "Low Range",
+        "Mid Range": "Mid Range",
+        "High Range": "High Range",
+        "eval_process": "All following skills are evaluated based on self-evaluation, with following scale",
+        "low_range_descr": "Ability to use the technology (meaning its basic and the most commoly used features) with occasional need of help from docs. or internet.",
+        "mid_range_descr": "Knowing majority of basic features without need of docs.. Ability to use advanced features with occasional need to \"google\" a thing or two.",
+        "high_range_descr": "Using majority of basic and advanced features without any problem. Deep knowledge of systems core and ability to adjust (or extend) the technology with help of the docs..",
+        "Programming and Markup Languages": "Programming and Markup Languages",
+        "Frameworks and Libraries": "Frameworks and Libraries",
+        "Databases": "Databases",
+        "Development and Design Tools": "Development and Design Tools",
+        "Cloud and DevOps": "Cloud and DevOps"
+    },
+    "NotFound" : {
+        "Project you are looking for was not found": "Project you are looking for was not found."
+    }
+}
