@@ -16,12 +16,6 @@ import Delimiter from "@/components/Delimiter";
 import { Project, projectList } from "@/objects/Projects";
 import { notFound } from "next/navigation";
 
-export async function generateStaticParams() {
-  return projectList.map((p) => ({
-    slug: p.slug,
-  }))
-}
-
 export default function Project({
   params,
 }: {

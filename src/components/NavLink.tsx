@@ -11,11 +11,11 @@ export default function NavLink({title, route, icon}: {title: string, route: str
 
     useEffect(() => {
         setActive(route.split('/')[1] === pathname.split('/')[1])
-    }, [pathname])
+    }, [pathname, route])
 
     return (
         <Link href={route} scroll={false} className={`border-b-4 border-solid border-transparent duration-150 flex flex-row font-semibold justify-center text-5xl px-5 py-2 transition lg:text-xl lg:hover:border-secondary  ${ isActive ? 'text-primary' : 'text-white lg:hover:text-primary'}`}>
-            <FontAwesomeIcon icon={icon} className="inline-block mr-4 lg:hidden"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={icon} className="inline-block mr-4 lg:hidden lg:mr-3 lg:mt-0.5 xl:inline-block"></FontAwesomeIcon>
             {title}
         </Link>
     )

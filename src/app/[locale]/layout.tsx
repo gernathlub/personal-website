@@ -16,10 +16,6 @@ export const metadata = {
   description: "Personal Website",
 };
 
-export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "sk" }];
-}
-
 export default async function LocaleLayout({
   children,
   params,
