@@ -5,6 +5,11 @@ import TechItem from "@/components/Tech/TechItem";
 import { DelimiterTypeEnum } from "@/enums/DelimiterTypeEnum";
 import { useTranslations } from "next-intl";
 
+export const metadata = {
+  title: "Lubomir Gernath's Technology Stack: A Proficient Fullstack Developer in Python, TypeScript, and C#",
+  description: "Delve into Lubomir Gernath's technology expertise, where passion meets proficiency. As a fullstack developer based in Kosice, Slovakia, Lubomir excels in a versatile technology stack, with a focus on Python, TypeScript, and C#. Explore the depth of skills and discover the hands-on experience behind each technology. From robust back-end solutions to dynamic front-end interfaces, Lubomir brings a balanced expertise that elevates digital projects. Uncover the layers of proficiency and envision the possibilities for your next tech-driven endeavor with Lubomir Gernath leading the way",
+};
+
 export default function Tech() {
   const t = useTranslations("Tech")
 
