@@ -7,7 +7,7 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"
 
-export default function ProjectLink({ slug, logo, title, extraClass, noLogo }: {slug: string, logo?: string, title: string, extraClass?: string, noLogo?: boolean}) {
+export default function ProjectLink({ slug, logo, title, extraClass, noLogo }: Readonly<{slug: string, logo?: string, title: string, extraClass?: string, noLogo?: boolean}>) {
     const params = useParams()
 
     const [isActive, setIsActive] = useState<boolean>(false);

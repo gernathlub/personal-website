@@ -16,11 +16,11 @@ import Delimiter from "@/components/Delimiter";
 import { Project, projectList } from "@/objects/Projects";
 import { notFound } from "next/navigation";
 
-export default function Project({
+export default function ProjectDetail({
   params,
-}: {
+}: Readonly<{
   params: { locale: string; slug: string };
-}) {
+}>) {
   const t = useTranslations("ProjectDetail")
 
   const proj: Project | undefined = projectList.find((p) => p.slug === params.slug)

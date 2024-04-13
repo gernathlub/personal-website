@@ -1,7 +1,4 @@
 {
-    "Test": {
-        "test_server": "Testing server"
-    },
     "Home": {
         "My Name is": "My Name is",
         "Looking for a\nFullStack Web Developer?": "Looking for a\nFullStack Web Developer?",
@@ -88,5 +85,11 @@
     },
     "NotFound" : {
         "Project you are looking for was not found": "Project you are looking for was not found."
+    },
+    "Navigation": {
+        "Home": "Home",
+        "Projects": "Projects",
+        "About": "About",
+        "Tech": "Tech"
     }
 }
