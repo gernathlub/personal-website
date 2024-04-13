@@ -15,6 +15,12 @@ import { DelimiterTypeEnum } from "@/enums/DelimiterTypeEnum";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LeisureTimeGridItem from "@/components/About/LeisureTimeGridItem";
 
+export const metadata = {
+  title: "Lubomir Gernath: Unveiling the Developer Behind the Code | Raw Bio, Education, and Resume",
+  description: "Explore the unfiltered narrative of Lubomir Gernath, the fullstack developer based in Kosice, Slovakia. Unveil the unembellished details of Lubomir's education, career path, and personal background. This page strips away the sweet talk to give you a straightforward look at the developer's resume and the experiences that shaped him. No frills, just the facts. Dive into the gritty reality of Lubomir Gernath's journey and get a no-nonsense understanding of the skills and background he brings to the table.",
+};
+
+
 export default function About() {
   const t = useTranslations("About");
 
