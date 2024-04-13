@@ -16,7 +16,7 @@ import Delimiter from "@/components/Delimiter";
 import { Project, projectList } from "@/objects/Projects";
 import { notFound } from "next/navigation";
 
-export default function ProjectPage({
+export default function ProjectDetail({
   params,
 }: Readonly<{
   params: { locale: string; slug: string };
