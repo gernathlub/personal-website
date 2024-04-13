@@ -74,7 +74,8 @@ export const projectList: Project[] = [
       "Angular",
       "KendoUI",
       "SQL Server",
-      "WPF"
+      "WPF",
+      "Azure Pipelines",
     ],
     isPro: true,
     startDate: new Date("2023-05-01"),
@@ -158,6 +159,7 @@ export const projectList: Project[] = [
     ],
     isPro: true,
     startDate: new Date("2023-07-01"),
+    endDate: new Date("2023-11-31"),
     relatedTo: ["Esten"],
     logoStaticPath: "/logos/esten.svg",
     descriptionEn:
