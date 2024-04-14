@@ -159,7 +159,7 @@ export const projectList: Project[] = [
         technologies: ['Python', 'RaspberyPi', 'WebSocket', 'Docker'],
         isPro: true,
         startDate: new Date('2023-07-01'),
-        endDate: new Date('2023-11-31'),
+        endDate: new Date('2023-10-31'),
         relatedTo: ['Esten'],
         logoStaticPath: '/logos/esten.svg',
         descriptionEn:
