@@ -9,42 +9,42 @@ body {
 }
 
 h1 {
-  @apply font-bold leading-relaxed text-5xl whitespace-pre-line sm:leading-relaxed sm:text-6xl;
+    @apply font-bold leading-relaxed text-5xl whitespace-pre-line sm:leading-relaxed sm:text-6xl;
 }
 
 h2 {
-  @apply font-semibold leading-relaxed text-5xl sm:text-6xl;
+    @apply font-semibold leading-relaxed text-5xl sm:text-6xl;
 }
 
 h3 {
-  @apply font-medium leading-normal text-4xl sm:text-5xl;
+    @apply font-medium leading-normal text-5xl;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0e1d23
+    background: #0e1d23;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #124255;
-  border-radius: 15px;
+    background: #124255;
+    border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #195f71;
+    background: #195f71;
 }
 
 .profile-mask {
-  -webkit-mask-image: url(../../public/profile_mask.svg);
-  mask-image: url(../../public/profile_mask.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  max-width: 100%;
+    -webkit-mask-image: url(../../public/profile_mask.svg);
+    mask-image: url(../../public/profile_mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    max-width: 100%;
 }
