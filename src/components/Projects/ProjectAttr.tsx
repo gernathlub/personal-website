@@ -6,11 +6,11 @@ export default function ProjectAttr({
     title,
     icon,
     children,
-}: {
+}: Readonly<{
     title: string
     children?: ReactNode
     icon: IconDefinition
-}) {
+}>) {
     return (
         <div className="flex flex-row">
             <FontAwesomeIcon icon={icon} />

@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { DelimiterTypeEnum } from '@/enums/DelimiterTypeEnum'
 
-export default function Delimiter({ type }: { type?: DelimiterTypeEnum }) {
+export default function Delimiter({
+    type,
+}: Readonly<{ type?: DelimiterTypeEnum }>) {
     function getImageByType(
         type: DelimiterTypeEnum = DelimiterTypeEnum.DarkToDark
     ) {

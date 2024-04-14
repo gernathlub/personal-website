@@ -6,11 +6,11 @@ export default function PersonalInfoItem({
     children,
     redirPath,
     icon,
-}: {
+}: Readonly<{
     children: ReactNode
     redirPath?: string
     icon: IconDefinition
-}) {
+}>) {
     return (
         <div className="text-xl">
             <FontAwesomeIcon icon={icon} className="mr-2 text-primary" />

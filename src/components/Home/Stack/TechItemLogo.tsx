@@ -3,10 +3,10 @@ import Image from 'next/image'
 export default function TechItemLogo({
     imgPath,
     redirectPath,
-}: {
+}: Readonly<{
     imgPath: string
     redirectPath?: string
-}) {
+}>) {
     return (
         <div className="m-10 h-40 overflow-visible relative text-primary w-40">
             <a
