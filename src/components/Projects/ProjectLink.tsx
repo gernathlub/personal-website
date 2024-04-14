@@ -32,7 +32,7 @@ export default function ProjectLink({
 
     return (
         <Link
-            scroll={false}
+            scroll={true}
             href={`/projects/${slug}`}
             className={`border-4 border-solid duration-150 flex flex-col h-fit mx-5 my-4 p-5 rounded-xl transition-colors w-60 md:my-2 2xl:my-0 ${isActive ? 'border-primary' : 'border-dark lg:hover:border-secondary'}`}>
             {noLogo ? (
