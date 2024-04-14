@@ -5,7 +5,6 @@
         "Let's See if You Just\nFound One!": "Pozrime sa, či ste jedného\npráve našli!",
         "Database": "Databázy",
         "And Little More": "A Trochu Viac"
-
     },
     "CareerNumbers": {
         "Career in Numbers": "Kariéra v Číslach",
@@ -84,7 +83,7 @@
         "Development and Design Tools": "Vývojárske a Dizajnérske Nástroje",
         "Cloud and DevOps": "Cloud a DevOps"
     },
-    "NotFound" : {
+    "NotFound": {
         "Project you are looking for was not found": "Projekt, ktorý hľadáte, nebol nájdený."
     },
     "Navigation": {

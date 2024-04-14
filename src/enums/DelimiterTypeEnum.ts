@@ -1,5 +1,5 @@
 export enum DelimiterTypeEnum {
-  DarkToDark,
-  DarkToSecondary,
-  SecondaryToDark,
+    DarkToDark,
+    DarkToSecondary,
+    SecondaryToDark,
 }

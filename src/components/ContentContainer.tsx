@@ -1,17 +1,17 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 export default function ContentContainer({
-  children,
-  extraClass,
+    children,
+    extraClass,
 }: {
-  children: ReactNode;
-  extraClass?: string;
+    children: ReactNode
+    extraClass?: string
 }) {
-  return (
-    <div className={`w-full ${extraClass}`}>
-      <div className="h-fit max-w-7xl mx-auto px-4 relative text-center w-full sm:px-6 md:w-10/12 lg:w-4/5 xl:w-3/4">
-        {children}
-      </div>
-    </div>
-  );
+    return (
+        <div className={`w-full ${extraClass}`}>
+            <div className="h-fit max-w-7xl mx-auto px-4 relative text-center w-full sm:px-6 md:w-10/12 lg:w-4/5 xl:w-3/4">
+                {children}
+            </div>
+        </div>
+    )
 }
