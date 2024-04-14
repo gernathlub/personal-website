@@ -3,13 +3,17 @@ import TechSection from './TechSection'
 import TechItemLogo from './TechItemLogo'
 import { useTranslations } from 'next-intl'
 import BgGradient from '@/components/BgGradient'
+import PopupComponent from '@/components/PopupComponent'
+import Checkmark from './Checkmark'
 
 export default function Stack() {
     const t = useTranslations('Home')
 
     return (
         <ContentContainer extraClass="flex flex-col my-40">
-            <h2 className="mb-80 mt-40">FullStack?</h2>
+            <PopupComponent>
+                <h2 className="pb-36 mb-44 mt-40">FullStack?</h2>
+            </PopupComponent>
             <div className="flex-wrap justify-center space-y-60 w-full">
                 <TechSection title="Frontend">
                     <TechItemLogo
@@ -98,7 +102,11 @@ export default function Stack() {
                 </TechSection>
             </div>
 
-            <h2 className="mb-40 mt-80 text-primary">FullStack</h2>
+            <PopupComponent>
+                <h2 className="pb-32 mb-8 mt-80 text-primary flex flex-row justify-center">
+                    <Checkmark /> FullStack
+                </h2>
+            </PopupComponent>
         </ContentContainer>
     )
 }
