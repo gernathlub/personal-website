@@ -10,7 +10,7 @@ export default function BaseLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <body className={font.className}>
-            <main className="bg-dark text-dark flex flex-col min-h-screen min-w-screen overflow-x-hidden">
+            <main className="min-w-screen flex min-h-screen flex-col overflow-x-hidden bg-dark text-dark">
                 <Header></Header>
                 {children}
                 <Footer></Footer>

@@ -9,8 +9,8 @@ export default function NumberItem({
 }>) {
     return (
         <div className="flex flex-col pt-40">
-            <div className="font-semibold text-9xl">{num}+</div>
-            <div className="font-semibold text-2xl text-primary">{title}</div>
+            <div className="text-9xl font-semibold">{num}+</div>
+            <div className="text-2xl font-semibold text-primary">{title}</div>
             <div>{subtitle}</div>
         </div>
     )

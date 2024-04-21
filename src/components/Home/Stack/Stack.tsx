@@ -12,9 +12,9 @@ export default function Stack() {
     return (
         <ContentContainer extraClass="flex flex-col my-40">
             <PopupComponent>
-                <h2 className="pb-36 mb-44 mt-40">FullStack?</h2>
+                <h2 className="mb-44 mt-40 pb-36">FullStack?</h2>
             </PopupComponent>
-            <div className="flex-wrap justify-center space-y-60 w-full">
+            <div className="w-full flex-wrap justify-center space-y-60">
                 <TechSection title="Frontend">
                     <TechItemLogo
                         imgPath="/logos/nextjs.svg"
@@ -33,10 +33,10 @@ export default function Stack() {
                 <TechSection title="Backend">
                     <div className="absolute right-96">
                         <div className="relative">
-                            <div className="w-175 rotate-45 absolute">
+                            <div className="absolute w-175 rotate-45">
                                 <BgGradient />
                             </div>
-                            <div className="w-175 absolute -rotate-45 blur-2xl -top-48 left-0">
+                            <div className="absolute -top-48 left-0 w-175 -rotate-45 blur-2xl">
                                 <BgGradient />
                             </div>
                         </div>
@@ -65,12 +65,12 @@ export default function Stack() {
                 </TechSection>
 
                 <TechSection title="Git">
-                    <div className="absolute -left-48 sm:-left:56 md:-left-60 rotate-45">
+                    <div className="sm:-left:56 absolute -left-48 rotate-45 md:-left-60">
                         <div className="relative">
-                            <div className="w-175 rotate-90 absolute">
+                            <div className="absolute w-175 rotate-90">
                                 <BgGradient />
                             </div>
-                            <div className="w-175 absolute -rotate-12 blur-2xl top-20 left-28">
+                            <div className="absolute left-28 top-20 w-175 -rotate-12 blur-2xl">
                                 <BgGradient />
                             </div>
                         </div>
@@ -103,7 +103,7 @@ export default function Stack() {
             </div>
 
             <PopupComponent>
-                <h2 className="pb-32 mb-8 mt-80 text-primary flex flex-row justify-center">
+                <h2 className="mb-8 mt-80 flex flex-row justify-center pb-32 text-primary">
                     <Checkmark /> FullStack
                 </h2>
             </PopupComponent>

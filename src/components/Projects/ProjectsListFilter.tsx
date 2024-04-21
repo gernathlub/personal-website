@@ -5,8 +5,8 @@ export default function ProjectsListFilter() {
     const t = useTranslations('Projects')
 
     return (
-        <div className="flex flex-col justify-center w-full">
-            <div className="flex flex-wrap justify-center mb-0 w-full lg:mb-10">
+        <div className="flex w-full flex-col justify-center">
+            <div className="mb-0 flex w-full flex-wrap justify-center lg:mb-10">
                 <ProjectLink
                     slug="rehapiano"
                     title="RehaPiano"
@@ -34,7 +34,7 @@ export default function ProjectsListFilter() {
                 />
             </div>
 
-            <div className="flex flex-wrap justify-center w-full">
+            <div className="flex w-full flex-wrap justify-center">
                 <ProjectLink
                     slug="personal-web"
                     title={t('Personal Website')}

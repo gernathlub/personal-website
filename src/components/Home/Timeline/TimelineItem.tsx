@@ -24,33 +24,33 @@ export default function TimelineItem({
     })
 
     return (
-        <div className="group/outer h-80 md:h-96 relative" ref={ref}>
-            <div className="flex relative top-1/2 right-0 -translate-y-1/2 w-screen lg:group-odd/outer:left-0 lg:group-odd/outer:-translate-x-1/2">
-                <div className="float-left pl-28 w-1/2 sm:pl-32 md:pl-60 lg:group-odd/outer:text-right lg:group-odd/outer:pl-0 lg:group-odd/outer:pr-60">
-                    <div className="mt-14 text-left w-fit float-left lg:group-odd/outer:float-right">
-                        <h3 className="font-semibold text-6xl text-primary sm:text-8xl">
+        <div className="group/outer relative h-80 md:h-96" ref={ref}>
+            <div className="relative right-0 top-1/2 flex w-screen -translate-y-1/2 lg:group-odd/outer:left-0 lg:group-odd/outer:-translate-x-1/2">
+                <div className="float-left w-1/2 pl-28 sm:pl-32 md:pl-60 lg:group-odd/outer:pl-0 lg:group-odd/outer:pr-60 lg:group-odd/outer:text-right">
+                    <div className="float-left mt-14 w-fit text-left lg:group-odd/outer:float-right">
+                        <h3 className="text-6xl font-semibold text-primary sm:text-8xl">
                             {year}
                         </h3>
-                        <div className="ml-1 text-xl w-40 sm:text-2xl sm:w-52">
+                        <div className="ml-1 w-40 text-xl sm:w-52 sm:text-2xl">
                             {title}
                         </div>
                     </div>
                 </div>
             </div>
             <div
-                className={`absolute border-dark border-8 border-solid delay-100 duration-500 group/inner ml-1.5 rounded-full top-1/2 transition-all -translate-x-1/2 -translate-y-1/2 z-2 ${inView ? 'bg-secondary h-32 w-32 sm:h-40 sm:w-40' : 'bg-dark h-10 w-10'}`}>
+                className={`group/inner z-2 absolute top-1/2 ml-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-8 border-solid border-dark transition-all delay-100 duration-500 ${inView ? 'h-32 w-32 bg-secondary sm:h-40 sm:w-40' : 'h-10 w-10 bg-dark'}`}>
                 <div
-                    className={`absolute hidden delay-300 duration-300 h-1 left-full rounded-xl top-1/2 transition-all -translate-y-1/2 z-1 md:block lg:group-odd/outer:left-0 lg:group-odd/outer:-translate-x-full ${inView ? 'bg-transparent w-0 right-0 lg:group-odd/outer:left-0' : 'bg-dark w-40'}`}
+                    className={`z-1 absolute left-full top-1/2 hidden h-1 -translate-y-1/2 rounded-xl transition-all delay-300 duration-300 md:block lg:group-odd/outer:left-0 lg:group-odd/outer:-translate-x-full ${inView ? 'right-0 w-0 bg-transparent lg:group-odd/outer:left-0' : 'w-40 bg-dark'}`}
                 />
                 <a
                     href={redirPath}
-                    className={`duration-200 overflow-visible opacity-0 delay-200 relative transition-all ${inView ? 'opacity-100' : ''}`}
+                    className={`relative overflow-visible opacity-0 transition-all delay-200 duration-200 ${inView ? 'opacity-100' : ''}`}
                     target="_blank">
                     {icon ? (
                         <div className="mt-1 sm:mt-2.5">
                             <FontAwesomeIcon
                                 icon={icon}
-                                className="my-auto p-3 w-5/6 h-auto"
+                                className="my-auto h-auto w-5/6 p-3"
                             />
                         </div>
                     ) : (

@@ -20,13 +20,13 @@ export default function Delimiter({
     }
 
     return (
-        <div className="aspect-10/2 block h-20 m-0 p-0 relative w-auto lg:aspect-100/6 lg:h-fit lg:w-full">
+        <div className="relative m-0 block aspect-10/2 h-20 w-auto p-0 lg:aspect-100/6 lg:h-fit lg:w-full">
             <Image
                 src={getImageByType(type)}
                 alt="Delimiter"
                 width={100}
                 height={100}
-                className="h-full max-w-none w-auto lg:h-auto lg:w-full"></Image>
+                className="h-full w-auto max-w-none lg:h-auto lg:w-full"></Image>
         </div>
     )
 }

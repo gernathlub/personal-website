@@ -40,7 +40,7 @@ export default async function LocaleLayout({
         <html lang={params.locale}>
             <BaseLayout>
                 <ContentContainer>
-                    <div className="flex flex-row h-10 mb-8 mt-2 relative w-full">
+                    <div className="relative mb-8 mt-2 flex h-10 w-full flex-row">
                         <LocaleSwitch />
                         <NavMenu />
                         <Socials />

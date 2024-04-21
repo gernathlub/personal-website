@@ -9,10 +9,10 @@ export default function TechCategory({
 }>) {
     return (
         <div className="mt-20 w-full">
-            <div className="border-b border-solid border-white font-light text-left text-3xl text-white">
+            <div className="border-b border-solid border-white text-left text-3xl font-light text-white">
                 {title}
             </div>
-            <div className="flex flex-row flex-wrap justify-center mt-5 md:justify-start">
+            <div className="mt-5 flex flex-row flex-wrap justify-center md:justify-start">
                 {children}
             </div>
         </div>

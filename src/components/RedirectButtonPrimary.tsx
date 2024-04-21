@@ -7,7 +7,7 @@ export default function RedirectButtonPrimary({
     return (
         <Link
             href={targetUrl}
-            className="bg-primary lg:hover:bg-secondary transition-colors duration-300 text-secondary lg:hover:text-white text-xl font-bold rounded-xl px-8 py-4">
+            className="rounded-xl bg-primary px-8 py-4 text-xl font-bold text-secondary transition-colors duration-300 lg:hover:bg-secondary lg:hover:text-white">
             {text}
         </Link>
     )

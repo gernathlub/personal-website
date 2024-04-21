@@ -13,9 +13,9 @@ export default function NotFound() {
             <BaseLayout>
                 <ContentContainer>
                     <div>
-                        <h1 className="text-8xl pt-8">404</h1>
+                        <h1 className="pt-8 text-8xl">404</h1>
                         <h2>Page Not Found</h2>
-                        <p className="text-2xl my-14 max-w-4xl mx-auto">
+                        <p className="mx-auto my-14 max-w-4xl text-2xl">
                             We are sorry but page you were looking for was not
                             found. Please check the URL or return to the
                             homepage
