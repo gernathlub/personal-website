@@ -13,10 +13,10 @@ export default function Checkmark() {
     return (
         <div
             ref={ref}
-            className="w-12 h-12 sm:w-14 sm:h-14 relative mr-4 text-primary font-extrabold text-5xl sm:text-6xl overflow-hidden my-auto">
+            className="relative my-auto mr-4 h-12 w-12 overflow-hidden text-5xl font-extrabold text-primary sm:h-14 sm:w-14 sm:text-6xl">
             <FontAwesomeIcon className="-mt-2" icon={faCheck}></FontAwesomeIcon>
             <div
-                className={`absolute top-0 left-0 w-full h-full bg-dark transition-all delay-500 duration-400 ${inView ? 'translate-x-full' : ''}`}></div>
+                className={`duration-400 absolute left-0 top-0 h-full w-full bg-dark transition-all delay-500 ${inView ? 'translate-x-full' : ''}`}></div>
         </div>
     )
 }

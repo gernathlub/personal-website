@@ -14,7 +14,7 @@ export default function ProjectAttr({
     return (
         <div className="flex flex-row">
             <FontAwesomeIcon icon={icon} />
-            <span className="font-medium ml-2 mr-4 -mt-0.5">
+            <span className="-mt-0.5 ml-2 mr-4 font-medium">
                 {title}
                 {children ? ':' : ''}
             </span>

@@ -15,13 +15,13 @@ export default function Tech() {
     const t = useTranslations('Tech')
 
     return (
-        <div className="flex flex-col flex-grow justify-center text-center">
-            <h1 className="mt-60 mb-60">{t('Technologies')}</h1>
+        <div className="flex flex-grow flex-col justify-center text-center">
+            <h1 className="mb-60 mt-60">{t('Technologies')}</h1>
             <Delimiter type={DelimiterTypeEnum.DarkToSecondary} />
             <ContentContainer extraClass="bg-secondary">
                 <div className="pb-32 pt-40 text-lg">
                     {t('eval_process')}:
-                    <ul className="list-disc mt-4 mx-auto text-left w-full xl:w-1/2">
+                    <ul className="mx-auto mt-4 w-full list-disc text-left xl:w-1/2">
                         <li className="mb-3">
                             <span className="font-semibold">
                                 {t('Low Range')}

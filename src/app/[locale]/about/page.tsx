@@ -25,23 +25,23 @@ export default function About() {
     const t = useTranslations('About')
 
     return (
-        <div className="pb-48 w-full">
+        <div className="w-full pb-48">
             <ContentContainer>
-                <h1 className="mb-48 mt-36 px-18 md:mb-64 md:mt-48 md:px-22 xl:px-28">
+                <h1 className="px-18 md:px-22 mb-48 mt-36 md:mb-64 md:mt-48 xl:px-28">
                     {t('Who am I?')}
                 </h1>
 
-                <div className="flex flex-col items-center justify-center mb-48 lg:flex-row lg:justify-normal">
-                    <div className="h-auto overflow-hidden relative w-full lg:mt-14 lg:w-1/2">
+                <div className="mb-48 flex flex-col items-center justify-center lg:flex-row lg:justify-normal">
+                    <div className="relative h-auto w-full overflow-hidden lg:mt-14 lg:w-1/2">
                         <Image
                             src={'/pv2c_2.jpg'}
                             alt="ProfilePhoto"
                             width={600}
                             height={400}
-                            className="h-auto max-w-sm mx-auto my-auto profile-mask"></Image>
+                            className="profile-mask mx-auto my-auto h-auto max-w-sm"></Image>
                     </div>
 
-                    <div className="flex flex-col mb-10 mt-10 my-auto pl-0 text-center space-y-3 w-full lg:pl-4 lg:mt-0 lg:text-left lg:w-1/2">
+                    <div className="my-auto mb-10 mt-10 flex w-full flex-col space-y-3 pl-0 text-center lg:mt-0 lg:w-1/2 lg:pl-4 lg:text-left">
                         <PersonalInfoItem icon={faUser}>
                             Ľubomír Gernáth
                         </PersonalInfoItem>
@@ -79,7 +79,7 @@ export default function About() {
 
             <ContentContainer>
                 <h2 className="mt-60 px-3">{t('introduce')}</h2>
-                <div className="flex flex-col mb-36 mt-48 px-4 space-y-8 text-2xl sm:px-0">
+                <div className="mb-36 mt-48 flex flex-col space-y-8 px-4 text-2xl sm:px-0">
                     <div>
                         <p>{t('my_name')}</p>
                         <p>{t('(short for Lubomir)')}</p>
@@ -103,7 +103,7 @@ export default function About() {
             <Delimiter type={DelimiterTypeEnum.DarkToSecondary} />
             <ContentContainer extraClass="bg-secondary">
                 <h2 className="pb-40 pt-48">{t('Outside Work Hours')}</h2>
-                <div className="gap-24 grid grid-cols-1 pb-48 text-2xl lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-24 pb-48 text-2xl lg:grid-cols-2">
                     <LeisureTimeGridItem
                         title={t('Algorithmization')}
                         description={t('algo_content')}
@@ -126,11 +126,11 @@ export default function About() {
             <ContentContainer>
                 <a
                     href="/pdf/CV.pdf"
-                    className="align-middle flex flex-col font-medium justify-center mt-40 px-3 text-4xl hover:text-primary sm:flex-row"
+                    className="mt-40 flex flex-col justify-center px-3 align-middle text-4xl font-medium hover:text-primary sm:flex-row"
                     download>
                     <FontAwesomeIcon
                         icon={faFilePdf}
-                        className="mb-4 text-6xl text-primary sm:mb-0 sm:mr-2 sm:-mt-3"
+                        className="mb-4 text-6xl text-primary sm:-mt-3 sm:mb-0 sm:mr-2"
                     />
                     {t('Download CV')}
                 </a>

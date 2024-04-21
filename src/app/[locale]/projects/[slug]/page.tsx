@@ -45,10 +45,10 @@ export default function ProjectDetail({
                         : proj.nameEn}
                 </h2>
 
-                <div className="flex flex-col justify-center mx-auto text-left text-xl md:text-2xl md:text-center ">
-                    <span className="flex flex-row justify-start mb-3 mt-10 text-2xl md:justify-center md:text-3xl">
+                <div className="mx-auto flex flex-col justify-center text-left text-xl md:text-center md:text-2xl ">
+                    <span className="mb-3 mt-10 flex flex-row justify-start text-2xl md:justify-center md:text-3xl">
                         <FontAwesomeIcon icon={faCode} />
-                        <span className="font-medium ml-2 mr-4 -mt-0.5">
+                        <span className="-mt-0.5 ml-2 mr-4 font-medium">
                             {t('Technologies')}:
                         </span>
                     </span>
@@ -57,8 +57,8 @@ export default function ProjectDetail({
                     </span>
                 </div>
 
-                <div className="divide-none divide-secondary divide-x-4 gap-5 grid grid-cols-1 mt-10 md:mt-20 lg:divide-solid lg:grid-cols-2">
-                    <div className="flex flex-col h-fit my-auto py-2 space-y-3 text-left text-xl">
+                <div className="mt-10 grid grid-cols-1 gap-5 divide-x-4 divide-none divide-secondary md:mt-20 lg:grid-cols-2 lg:divide-solid">
+                    <div className="my-auto flex h-fit flex-col space-y-3 py-2 text-left text-xl">
                         {proj.isPro ? (
                             <ProjectAttr
                                 title={t('Professional')}

@@ -15,9 +15,9 @@ export default function ProjectsLayout({
     const t = useTranslations('Projects')
 
     return (
-        <div className="flex flex-col flex-grow justify-center">
+        <div className="flex flex-grow flex-col justify-center">
             <ContentContainer extraClass="mb-20">
-                <h1 className="mt-40 mb-56">{t('Projects')}</h1>
+                <h1 className="mb-56 mt-40">{t('Projects')}</h1>
                 <ProjectsListFilter></ProjectsListFilter>
             </ContentContainer>
             {children}

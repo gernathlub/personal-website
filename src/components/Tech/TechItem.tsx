@@ -6,11 +6,11 @@ export default function TechItem({
     progress: number
 }>) {
     return (
-        <div className="flex flex-col p-4 mx-5 text-left text-xl w-64">
+        <div className="mx-5 flex w-64 flex-col p-4 text-left text-xl">
             <p className="ml-1">{title}</p>
-            <div className="bg-secondary h-3 mt-1 rounded-full w-full">
+            <div className="mt-1 h-3 w-full rounded-full bg-secondary">
                 <span
-                    className="bg-primary block h-full rounded-full"
+                    className="block h-full rounded-full bg-primary"
                     style={{ width: `${progress}%` }}></span>
             </div>
         </div>

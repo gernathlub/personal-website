@@ -3,13 +3,13 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Socials() {
     return (
-        <div className="absolute align-middle flex flex-row right-4 space-x-6 text-4xl -top-2 md:right-0">
+        <div className="absolute -top-2 right-4 flex flex-row space-x-6 align-middle text-4xl md:right-0">
             <a
                 href="https://github.com/gernathlub"
                 className="h-9 w-9"
                 target="_blank">
                 <FontAwesomeIcon
-                    className="hover:text-primary hover:cursor-pointer"
+                    className="hover:cursor-pointer hover:text-primary"
                     icon={faGithub}
                 />
             </a>
@@ -18,7 +18,7 @@ export default function Socials() {
                 className="h-9 w-9"
                 target="_blank">
                 <FontAwesomeIcon
-                    className="hover:text-primary hover:cursor-pointer"
+                    className="hover:cursor-pointer hover:text-primary"
                     icon={faLinkedin}
                 />
             </a>

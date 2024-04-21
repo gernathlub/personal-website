@@ -34,7 +34,7 @@ export default function ProjectLink({
         <Link
             scroll={true}
             href={`/projects/${slug}`}
-            className={`border-4 border-solid duration-150 flex flex-col h-fit mx-5 my-4 p-5 rounded-xl transition-colors w-60 md:my-2 2xl:my-0 ${isActive ? 'border-primary' : 'border-dark lg:hover:border-secondary'}`}>
+            className={`mx-5 my-4 flex h-fit w-60 flex-col rounded-xl border-4 border-solid p-5 transition-colors duration-150 md:my-2 2xl:my-0 ${isActive ? 'border-primary' : 'border-dark lg:hover:border-secondary'}`}>
             {noLogo ? (
                 ''
             ) : logo ? (
@@ -48,7 +48,7 @@ export default function ProjectLink({
             ) : (
                 <FontAwesomeIcon className="text-6xl" icon={faLaptopCode} />
             )}
-            <p className="mt-2 text-2xl text-center">{title}</p>
+            <p className="mt-2 text-center text-2xl">{title}</p>
         </Link>
     )
 }
