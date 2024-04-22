@@ -8,8 +8,8 @@ export default function ContentContainer({
     extraClass?: string
 }>) {
     return (
-        <div className={`w-full ${extraClass}`}>
-            <div className="h-fit max-w-7xl mx-auto px-4 relative text-center w-full sm:px-6 md:w-10/12 lg:w-4/5 xl:w-3/4">
+        <div className={`w-full grow ${extraClass}`}>
+            <div className="relative mx-auto h-fit w-full max-w-7xl px-4 text-center sm:px-6 md:w-10/12 lg:w-4/5 xl:w-3/4">
                 {children}
             </div>
         </div>

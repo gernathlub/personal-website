@@ -7,17 +7,17 @@ export default function Intro() {
 
     return (
         <ContentContainer>
-            <div className="flex flex-col mb-52 mt-36 px-18 space-y-64 md:mt-48 md:px-22 xl:px-28 md:space-y-80">
+            <div className="px-18 md:px-22 mb-52 mt-36 flex flex-col space-y-64 md:mt-48 md:space-y-80 xl:px-28">
                 <h1>{t('Looking for a\nFullStack Web Developer?')}</h1>
                 <PopupComponent>
-                    <h3 className="px-10 whitespace-pre-line">
+                    <h3 className="whitespace-pre-line px-10">
                         {t("Let's See if You Just\nFound One!")}
                     </h3>
                 </PopupComponent>
                 <h3 className="mt-48">
                     <PopupComponent>{t('My Name is')}</PopupComponent>
                     <PopupComponent>
-                        <p className="font-semibold text-primary pb-10">
+                        <p className="pb-10 font-semibold text-primary">
                             Ľubomír Gernáth
                         </p>
                     </PopupComponent>

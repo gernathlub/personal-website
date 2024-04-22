@@ -40,27 +40,27 @@ export default function NavMenuClient({
     }
 
     return (
-        <div className="flex-grow h-full my-auto relative w-fit">
-            <div className="block -mt-3 text-5xl w-full z-50 lg:hidden">
+        <div className="relative my-auto h-full w-fit flex-grow">
+            <div className="z-50 -mt-3 block w-full text-5xl lg:hidden">
                 <FontAwesomeIcon
                     icon={faBars}
-                    className={`absolute cursor-pointer duration-300 transform transition-opacity  ${
-                        isOpen ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+                    className={`absolute transform cursor-pointer transition-opacity duration-300  ${
+                        isOpen ? 'scale-95 opacity-0' : 'scale-100 opacity-100'
                     }`}
                     onClick={toggleMenu}></FontAwesomeIcon>
                 <FontAwesomeIcon
                     icon={faXmark}
-                    className={`cursor-pointer duration-300 transform transition-opacity ${
-                        !isOpen ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+                    className={`transform cursor-pointer transition-opacity duration-300 ${
+                        !isOpen ? 'scale-95 opacity-0' : 'scale-100 opacity-100'
                     }`}
                     onClick={toggleMenu}></FontAwesomeIcon>
             </div>
 
             <div
-                className={`bg-dark duration-300 fixed flex flex-col h-screen left-0 mt-0 pt-12 space-x-0 space-y-7 top-30 transition-opacity w-screen lg:flex-row lg:h-auto lg:justify-center lg:-mt-2 lg:pt-0 lg:relative lg:space-x-1 lg:space-y-0 lg:w-full ${
+                className={`top-30 fixed left-0 mt-0 flex h-screen w-screen flex-col space-x-0 space-y-7 bg-dark pt-12 transition-opacity duration-300 lg:relative lg:-mt-2 lg:h-auto lg:w-full lg:flex-row lg:justify-center lg:space-x-1 lg:space-y-0 lg:pt-0 ${
                     isOpen
-                        ? 'opacity-100 z-30'
-                        : 'opacity-0 -z-1 lg:opacity-100'
+                        ? 'z-30 opacity-100'
+                        : '-z-1 opacity-0 lg:opacity-100'
                 }`}>
                 <NavLink title={translations.Home} icon={faHome} route="/" />
                 <NavLink

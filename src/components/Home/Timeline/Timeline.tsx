@@ -8,12 +8,12 @@ export default function Timeline() {
 
     return (
         <ContentContainer extraClass="bg-secondary">
-            <h2 className="pt-80 whitespace-pre-line lg:whitespace-normal">
+            <h2 className="whitespace-pre-line pt-80 lg:whitespace-normal">
                 {t('A Brief\nHistory of Me')}
             </h2>
-            <div className="flex flex-row justify-center py-60 relative w-full">
-                <div className="block flex-grow-0 h-full w-12 sm:w-16 md:hidden md:w-auto lg:block lg:flex-grow" />
-                <div className="bg-dark flex-grow-0 h-full rounded-xl w-3">
+            <div className="relative flex w-full flex-row justify-center py-60">
+                <div className="block h-full w-12 flex-grow-0 sm:w-16 md:hidden md:w-auto lg:block lg:flex-grow" />
+                <div className="h-full w-3 flex-grow-0 rounded-xl bg-dark">
                     <TimelineItem
                         icon={faCode}
                         year={2017}
@@ -52,7 +52,7 @@ export default function Timeline() {
                         extraClass="p-3"
                     />
                 </div>
-                <div className="flex-grow h-full w-auto" />
+                <div className="h-full w-auto flex-grow" />
             </div>
         </ContentContainer>
     )
