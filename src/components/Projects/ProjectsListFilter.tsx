@@ -6,7 +6,14 @@ export default function ProjectsListFilter() {
 
     return (
         <div className="flex w-full flex-col justify-center">
-            <div className="mb-0 flex w-full flex-wrap justify-center lg:mb-10">
+            <div className="mb-0 flex w-full flex-wrap justify-center space-y-6 md:space-y-2 lg:mb-10">
+                <ProjectLink
+                    slug="vtms"
+                    title="VTMS"
+                    logo="/logos/vissim-logo.svg"
+                    extraClass="mt-2 w-full"
+                />
+
                 <ProjectLink
                     slug="rehapiano"
                     title="RehaPiano"

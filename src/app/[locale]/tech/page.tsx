@@ -47,43 +47,51 @@ export default function Tech() {
 
             <ContentContainer extraClass="mb-20 mt-40">
                 <TechCategory title={t('Programming and Markup Languages')}>
-                    <TechItem title="Python" progress={80} />
                     <TechItem title="TypeScript" progress={80} />
                     <TechItem title="C#" progress={60} />
+                    <TechItem title="Python" progress={80} />
                     <TechItem title="GO" progress={30} />
                     <TechItem title="SQL" progress={60} />
                     <TechItem title="JavaScript" progress={60} />
                 </TechCategory>
 
                 <TechCategory title={t('Frameworks and Libraries')}>
-                    <TechItem title="Django" progress={90} />
-                    <TechItem title="Angular" progress={60} />
-                    <TechItem title="React.js" progress={60} />
+                    <TechItem
+                        title="Angular"
+                        progress={80}
+                        certificate={{
+                            logoPath: '/logos/angular-cert.svg',
+                            link: 'https://api.certificates.dev/certificates/9f6300ec-b01a-407b-8987-4e034b19c51e/download?signature=2130a076b24bf16867b39cf3a5a3e36bd72880a21b3897985bf177592c69ee22',
+                        }}
+                    />
+                    <TechItem title=".Net" progress={70} />
+                    <TechItem title="Django" progress={75} />
                     <TechItem title="Next.js" progress={70} />
-                    <TechItem title=".Net" progress={50} />
-                    <TechItem title="Flask" progress={70} />
+                    <TechItem title="React.js" progress={50} />
+                    <TechItem title="Flask" progress={60} />
                     <TechItem title="HTMX" progress={80} />
-                    <TechItem title="TailwindCSS" progress={80} />
+                    <TechItem title="TailwindCSS" progress={90} />
                     <TechItem title="Bootstrap" progress={50} />
-                    <TechItem title="WPF" progress={30} />
+                    <TechItem title="WPF" progress={50} />
                     <TechItem title="Prisma" progress={50} />
                 </TechCategory>
 
                 <TechCategory title={t('Databases')}>
                     <TechItem title="PostgreSQL" progress={70} />
                     <TechItem title="MongoDB" progress={50} />
-                    <TechItem title="SQL Server" progress={50} />
+                    <TechItem title="SQL Server" progress={70} />
                     <TechItem title="SQLite" progress={60} />
                     <TechItem title="CosmosDB" progress={30} />
                 </TechCategory>
 
                 <TechCategory title={t('Development and Design Tools')}>
                     <TechItem title="Git" progress={80} />
-                    <TechItem title="Figma" progress={50} />
+                    <TechItem title="Figma" progress={60} />
                     <TechItem title="Docker" progress={70} />
                     <TechItem title="CircleCI" progress={40} />
                     <TechItem title="Jira" progress={50} />
-                    <TechItem title="Azure Pipelines" progress={40} />
+                    <TechItem title="Azure Pipelines" progress={60} />
+                    <TechItem title="Github Actions" progress={40} />
                 </TechCategory>
 
                 <TechCategory title={t('Cloud and DevOps')}>

@@ -33,12 +33,15 @@ export default function About() {
 
                 <div className="mb-48 flex flex-col items-center justify-center lg:flex-row lg:justify-normal">
                     <div className="relative h-auto w-full overflow-hidden lg:mt-14 lg:w-1/2">
-                        <Image
-                            src={'/pv2c_2.jpg'}
-                            alt="ProfilePhoto"
-                            width={600}
-                            height={400}
-                            className="profile-mask mx-auto my-auto h-auto max-w-sm"></Image>
+                        <div className="profile-mask-container">
+                            <Image
+                                src="/pv2c_3.jpg"
+                                alt="ProfilePhoto"
+                                width={400}
+                                height={600}
+                                className="profile-image"
+                            />
+                        </div>
                     </div>
 
                     <div className="my-auto mb-10 mt-10 flex w-full flex-col space-y-3 pl-0 text-center lg:mt-0 lg:w-1/2 lg:pl-4 lg:text-left">

@@ -11,7 +11,7 @@ export default function CareerNumbers() {
 
             <div className="flex flex-row flex-wrap justify-center gap-12 pb-40 pt-10 xl:flex-nowrap xl:overflow-visible">
                 <NumberItem
-                    num={3}
+                    num={4}
                     title={t('Years of')}
                     subtitle={t('Professional Experience')}
                 />
@@ -21,17 +21,17 @@ export default function CareerNumbers() {
                     subtitle={t('Programming Languages')}
                 />
                 <NumberItem
-                    num={7}
+                    num={8}
                     title={t('Successfull')}
                     subtitle={t('Projects')}
                 />
                 <NumberItem
-                    num={7}
+                    num={8}
                     title={t('Years of')}
                     subtitle={t('Programming')}
                 />
                 <NumberItem
-                    num={6}
+                    num={7}
                     title={t('Frameworks')}
                     subtitle={t('Regulerly Used')}
                 />
@@ -39,7 +39,7 @@ export default function CareerNumbers() {
 
             <div className="flex flex-row flex-wrap justify-center pb-40 pt-10">
                 <div className="flex flex-col font-semibold">
-                    <div className="text-7xl sm:text-9xl">50 000+</div>
+                    <div className="text-7xl sm:text-9xl">500 000+</div>
                     <div className="text-3xl text-primary">{t('Lines')}</div>
                     <div className="text-xl font-normal">{t('of Code')}</div>
                 </div>

@@ -167,4 +167,25 @@ export const projectList: Project[] = [
         descriptionSk:
             'Vývoj softvéru potrebného pre zariadenie na rehabilitáciu a monitorovanie progresu liečby v jazyku Python. Ďalšie informácie budú pridané neskôr, pretože projekt je stále vo vývoji, a na všetky podrobnosti projektu sa môže vzťahovať zmluva o zachovaní dôvernosti (NDA).',
     },
+    {
+        nameEn: 'Vessel traffic management system',
+        slug: 'vtms',
+        technologies: [
+            'Angular',
+            '.Net',
+            'C++',
+            'TailwindCSS',
+            'SQL Server',
+            'Github Actions',
+        ],
+        isPro: true,
+        startDate: new Date('2024-09-01'),
+        relatedTo: ['Esten'],
+        client: 'Vissim',
+        logoStaticPath: '/logos/vissim-logo.svg',
+        descriptionEn:
+            'As a senior developer, Iʼve been working on the core development of the Vessel Traffic Management System—a large-scale, microservice-based platform that integrates real-time data from multiple sources and exposes APIs for a desktop application. My contributions have been primarily focused on Angular (up to v20) and .NET (up to .net9), where Iʼve implemented key features, contributed to architectural decisions, and ensured code quality and performance.In addition to the main system, Iʼve also actively contributed to the development of over four supporting software products. These tools extend the systemʼs capabilities, including monitoring utilities, configuration panels, and diagnostic interfaces—all tailored to enhance overall system operability.',
+        descriptionSk:
+            'Ako seniorný vývojár som sa podieľal na vývoji systému na riadenie lodnej dopravy (Vessel Traffic Management System) — rozsiahlej platformy založenej na architektúre mikroslužieb, ktorá integruje dáta v reálnom čase z viacerých zdrojov a poskytuje API pre desktopovú aplikáciu. Moja práca bola zameraná najmä na Angular (do verzie 20) a .NET (do verzie .NET 9), kde som implementoval kľúčové funkcionality, prispieval k architektonickým rozhodnutiam a zabezpečoval kvalitu a výkon kódu. Okrem hlavného systému som sa aktívne zapájal aj do vývoja viac než štyroch podporných softvérových riešení. Tieto nástroje rozširujú možnosti systému a zahŕňajú monitorovacie nástroje, konfiguračné panely a diagnostické rozhrania — všetky navrhnuté tak, aby zlepšili celkovú prevádzkyschopnosť systému.',
+    },
 ]
