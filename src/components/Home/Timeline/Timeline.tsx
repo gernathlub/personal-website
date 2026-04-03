@@ -30,7 +30,7 @@ export default function Timeline() {
 
                     <TimelineItem
                         year={2021}
-                        title={t('Contractor at Remaster')}
+                        title={t('Fullstack developer at Remaster')}
                         redirPath="https://remaster.com/"
                         imgSrc="/logos/remaster.svg"
                         extraClass="p-3"
@@ -46,10 +46,18 @@ export default function Timeline() {
 
                     <TimelineItem
                         year={2023}
-                        title={t('Contractor at Esten')}
-                        redirPath="https://esten.eu/"
+                        title={t('Fullstack developer at Esten')}
+                        redirPath="https://esten.solutions/"
                         imgSrc="/logos/esten.svg"
                         extraClass="p-3"
+                    />
+
+                    <TimelineItem
+                        year={2025}
+                        title={t('Frontend developer at Solar Turbines')}
+                        redirPath="https://solarturbines.sk/"
+                        imgSrc="/logos/solar-turbines.svg"
+                        extraClass="p-1"
                     />
                 </div>
                 <div className="h-full w-auto flex-grow" />
