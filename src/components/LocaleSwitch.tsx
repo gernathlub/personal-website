@@ -2,15 +2,26 @@
 
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 export default function LocaleSwitch() {
     const locale = useLocale()
+    const pathname = usePathname()
 
-    const nextLocale = locale === 'en' ? 'sk' : 'en'
+    const [destPath, setDestPath] = useState('')
+
+    useEffect(() => {
+        const nextLocale = locale === 'en' ? 'sk' : 'en'
+        const pathWithoutLocale = pathname.replace(/^\/(en|sk)(?=\/|$)/, '')
+        const normalizedPath = pathWithoutLocale || '/'
+
+        setDestPath(`/${nextLocale}${normalizedPath}`)
+    }, [pathname, locale])
 
     return (
         <Link
-            href={'/' + nextLocale}
+            href={destPath}
             prefetch={false}
             className="absolute -top-2.5 left-4 z-10 inline-block h-12 w-24 rounded-full bg-secondary py-3 md:left-0">
             <span

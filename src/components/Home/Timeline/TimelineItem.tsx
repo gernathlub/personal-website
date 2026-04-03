@@ -31,7 +31,7 @@ export default function TimelineItem({
                         <h3 className="text-6xl font-semibold text-primary sm:text-8xl">
                             {year}
                         </h3>
-                        <div className="ml-1 w-40 text-xl sm:w-52 sm:text-2xl">
+                        <div className="ml-1 h-16 w-40 text-xl sm:w-52 sm:text-2xl">
                             {title}
                         </div>
                     </div>
