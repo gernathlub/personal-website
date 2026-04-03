@@ -33,9 +33,9 @@ export default function NavMenuClient({
     }, [pathname])
 
     function toggleMenu() {
-        !isOpen
-            ? (document.body.style.overflow = 'hidden')
-            : (document.body.style.overflow = 'auto')
+        isOpen
+            ? (document.body.style.overflow = 'auto')
+            : (document.body.style.overflow = 'hidden')
         setIsOpen(!isOpen)
     }
 
