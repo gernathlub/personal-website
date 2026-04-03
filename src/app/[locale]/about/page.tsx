@@ -108,7 +108,7 @@ export default function About() {
                 <h2 className="pb-40 pt-48">{t('Outside Work Hours')}</h2>
                 <div className="grid grid-cols-1 gap-24 pb-48 text-2xl lg:grid-cols-2">
                     <LeisureTimeGridItem
-                        title={t('Algorithmization')}
+                        title={t('Coding')}
                         description={t('algo_content')}
                     />
                     <LeisureTimeGridItem
@@ -120,7 +120,7 @@ export default function About() {
                         description={t('traveling_content')}
                     />
                     <LeisureTimeGridItem
-                        title="Sci-fi/Fantasy"
+                        title="Sci-fi & Fantasy"
                         description={t('scifi_content')}
                     />
                 </div>

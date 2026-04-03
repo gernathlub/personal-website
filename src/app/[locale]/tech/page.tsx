@@ -29,7 +29,7 @@ export default function Tech() {
             <ContentContainer extraClass="bg-secondary">
                 <div className="pb-32 pt-40 text-lg">
                     {t('eval_process')}:
-                    <ul className="mx-auto mt-4 w-full list-disc text-left xl:w-1/2">
+                    <ul className="mx-auto mt-4 w-full list-inside list-disc text-left xl:w-1/2">
                         <li className="mb-3">
                             <span className="font-semibold">
                                 {t('Low Range')}
