@@ -35,7 +35,7 @@ export default function About() {
                     <div className="relative h-auto w-full overflow-hidden lg:mt-14 lg:w-1/2">
                         <div className="profile-mask-container">
                             <Image
-                                src="/pv2c_3.jpg"
+                                src="/pv3c_1.png"
                                 alt="ProfilePhoto"
                                 width={400}
                                 height={600}
@@ -56,9 +56,9 @@ export default function About() {
                         </PersonalInfoItem>
 
                         <PersonalInfoItem
-                            redirPath="mailto:gernathlub@gmail.com"
+                            redirPath="mailto:lubomir.gernath@gmail.com"
                             icon={faEnvelope}>
-                            GernathLub@gmail.com
+                            lubomir.gernath@gmail.com
                         </PersonalInfoItem>
 
                         <PersonalInfoItem icon={faCakeCandles}>
@@ -71,8 +71,8 @@ export default function About() {
 
                         <PersonalInfoItem
                             icon={faBriefcase}
-                            redirPath="https://esten.eu">
-                            Esten s.r.o.
+                            redirPath="https://solarturbines.sk/">
+                            Solar Turbines
                         </PersonalInfoItem>
                     </div>
                 </div>

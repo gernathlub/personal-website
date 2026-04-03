@@ -10,6 +10,7 @@ export type Project = {
     relatedTo?: string[]
     client?: string
     logoStaticPath?: string
+    extraClass?: string
     descriptionEn: string
     descriptionSk: string
 }
@@ -36,6 +37,7 @@ export const projectList: Project[] = [
         relatedTo: ['Remaster Solutions'],
         client: 'Mobly',
         logoStaticPath: '/logos/vroom.svg',
+        extraClass: 'mt-2 w-full',
         descriptionEn:
             'Online car dealership and magazine platform implementation as a contractor for Remaster Solutions for customer Mobly(.be). Focused primarily on Django framework programming - both backend (Python) and frontend (JavaScript, Tailwind, HTMX, DTL). Actively participating in third-party services integration. Involved in designing the system and data flow architecture. In later stages of development, I also took over the tech lead duties, managing the development team and the development flow of the project as well.',
         descriptionSk:
@@ -101,10 +103,11 @@ export const projectList: Project[] = [
             'Docker',
             'Figma',
         ],
-        isPro: true,
+        isPro: false,
         startDate: new Date('2021-05-20'),
         endDate: new Date('2022-09-04'),
         logoStaticPath: '/logos/amfik.svg',
+        extraClass: 'mx-auto w-3/4',
         descriptionEn:
             'I undertook a solo freelance project for a student civic association, which entailed designing and implementing a full-stack web application along with its user interface (UI). The UI was created in Figma. The primary technology used was the Django (REST) framework with an SQLite database, and the frontend was implemented in React with the use of Redux. The goal of the project was creating website promoting civic association, providing information about organized public events and allowing community donations to the old open-air theatre restoration.',
         descriptionSk:
@@ -162,7 +165,8 @@ export const projectList: Project[] = [
         startDate: new Date('2023-07-01'),
         endDate: new Date('2023-10-31'),
         relatedTo: ['Esten'],
-        logoStaticPath: '/logos/esten.svg',
+        logoStaticPath: '/logos/estn-long.svg',
+        extraClass: 'mt-2 w-full',
         descriptionEn:
             'Development of the software necessary for a rehabilitation and treatment monitoring hardware device in Python. More information will be added later since the project is still under development, and a non-disclosure agreement (NDA) may apply to all the project details.',
         descriptionSk:
@@ -185,6 +189,7 @@ export const projectList: Project[] = [
         relatedTo: ['Esten'],
         client: 'Vissim',
         logoStaticPath: '/logos/vissim-logo.svg',
+        extraClass: 'mt-2 w-full',
         descriptionEn:
             'As a senior developer, Iʼve been working on the core development of the Vessel Traffic Management System—a large-scale, microservice-based platform that integrates real-time data from multiple sources and exposes APIs for a desktop application. My contributions have been primarily focused on Angular (up to v20) and .NET (up to .net9), where Iʼve implemented key features, contributed to architectural decisions, and ensured code quality and performance.In addition to the main system, Iʼve also actively contributed to the development of over four supporting software products. These tools extend the systemʼs capabilities, including monitoring utilities, configuration panels, and diagnostic interfaces—all tailored to enhance overall system operability.',
         descriptionSk:
@@ -198,6 +203,7 @@ export const projectList: Project[] = [
         startDate: new Date('2025-10-01'),
         relatedTo: ['Solar Turbines'],
         logoStaticPath: '/logos/solar-turbines.svg',
+        extraClass: 'mt-2 w-full',
         descriptionEn:
             'Frontend Developer (Angular) in a multinational team building data-driven dashboards in the energy (oil & gas) domain. Focused on real-time data collection, visualization, and alerting for turbine system monitoring, early warning, and failure prevention.',
         descriptionSk:

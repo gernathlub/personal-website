@@ -15,7 +15,10 @@ export default function PersonalInfoItem({
         <div className="text-xl">
             <FontAwesomeIcon icon={icon} className="mr-2 text-primary" />
             {redirPath ? (
-                <a href={redirPath} className="hover:text-primary">
+                <a
+                    href={redirPath}
+                    className="hover:text-primary"
+                    target="_blank">
                     {children}
                 </a>
             ) : (

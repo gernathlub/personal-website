@@ -55,7 +55,7 @@ export default function Timeline() {
                     <TimelineItem
                         year={2025}
                         title={t('Frontend developer at Solar Turbines')}
-                        redirPath="https://www.solarturbines.com/"
+                        redirPath="https://solarturbines.sk/"
                         imgSrc="/logos/solar-turbines.svg"
                         extraClass="p-1"
                     />

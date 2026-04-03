@@ -1,70 +1,40 @@
 import { useTranslations } from 'next-intl'
 import ProjectLink from './ProjectLink'
+import { Project, projectList } from '@/objects/Projects'
+import React from 'react'
 
 export default function ProjectsListFilter() {
     const t = useTranslations('Projects')
 
+    const proProjects = projectList.filter((p) => p.isPro)
+    const otherProjects = projectList.filter((p) => !p.isPro)
+
+    function sortAndRenderProjects(projects: Project[]): React.JSX.Element[] {
+        return projects
+            .sort(
+                (a, b) =>
+                    (b.endDate ?? new Date()).getTime() -
+                    (a.endDate ?? new Date()).getTime()
+            )
+            .map((project) => (
+                <ProjectLink
+                    key={project.slug}
+                    slug={project.slug}
+                    title={project.nameSk ? t(project.nameEn) : project.nameEn}
+                    logo={project.logoStaticPath}
+                    extraClass={project.extraClass}
+                />
+            ))
+    }
+
     return (
         <div className="flex w-full flex-col justify-center">
             <div className="mb-0 flex w-full flex-wrap justify-center space-y-6 md:space-y-2 lg:mb-10">
-                <ProjectLink
-                    slug="alerts-management"
-                    title="Alerts Management"
-                    logo="/logos/solar-turbines.svg"
-                    extraClass="mt-2 w-full"
-                />
-
-                <ProjectLink
-                    slug="vtms"
-                    title="VTMS"
-                    logo="/logos/vissim-logo.svg"
-                    extraClass="mt-2 w-full"
-                />
-
-                <ProjectLink
-                    slug="rehapiano"
-                    title="RehaPiano"
-                    logo="/logos/estn-long.svg"
-                    extraClass="mt-2 w-full"
-                />
-
-                <ProjectLink
-                    slug="eboard"
-                    logo="/logos/essity.svg"
-                    title="eBoard"
-                />
-
-                <ProjectLink
-                    slug="broker-platform"
-                    logo="/logos/baloise.svg"
-                    title="Broker Platform"
-                />
-
-                <ProjectLink
-                    slug="vroom"
-                    logo="/logos/vroom.svg"
-                    title="Vroom"
-                    extraClass="mt-2 w-full"
-                />
+                {sortAndRenderProjects(proProjects)}
             </div>
 
             <div className="flex w-full flex-wrap justify-center">
-                <ProjectLink
-                    slug="personal-web"
-                    title={t('Personal Website')}
-                />
-
-                <ProjectLink
-                    slug="master-thesis"
-                    title={t('Web Content Recommendation Service')}
-                />
-
-                <ProjectLink
-                    slug="amfik"
-                    title={t('Open-Air Theatre App')}
-                    logo="/logos/amfik.svg"
-                    extraClass="mx-auto w-3/4"
-                />
+                {sortAndRenderProjects(otherProjects)}
             </div>
         </div>
     )
