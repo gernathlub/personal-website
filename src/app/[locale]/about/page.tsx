@@ -89,17 +89,13 @@ export default function About() {
                     </div>
 
                     <div>
-                        <p>{t('what_you_know')}</p>
-                        <p>{t('recap')}</p>
+                        <p>{t('intro')}</p>
                     </div>
-
-                    <div>{t('childhood')}</div>
-
-                    <div>{t('school_years')}</div>
-
                     <div>
-                        <p>{t('expand_stack')}</p>
-                        <p>{t('contractor_at_esten')}</p>
+                        <p>{t('journey')}</p>
+                    </div>
+                    <div>
+                        <p>{t('values')}</p>
                     </div>
                 </div>
             </ContentContainer>
